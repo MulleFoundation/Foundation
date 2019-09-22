@@ -10,6 +10,7 @@ generate_brew_formula_build()
    cat <<EOF
 
   def install
+    system "mulle-sde", "clean", "cache"
     system "mulle-sde","install","--standalone","--prefix","#{prefix}","https://github.com/MulleFoundation/Foundation/archive/latest.zip"
   end
 EOF
