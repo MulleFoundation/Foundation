@@ -30,6 +30,9 @@ if( LINK_PHASE)
    include( Dependencies OPTIONAL)
 endif()
 
+unset( STARTUP_LIBRARY_NAME)
+
+
 if( STANDALONE)
    set( LIBRARY_NAME "_Foundation")
    set( STANDALONE_LIBRARY_NAME "Foundation")
