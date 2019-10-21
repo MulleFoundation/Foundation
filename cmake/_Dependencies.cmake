@@ -11,7 +11,7 @@ endif()
 # Disable with: `mulle-sourcetree mark objc-compat no-link`
 #
 if( NOT OBJC_COMPAT_HEADER)
-   find_file( OBJC_COMPAT_HEADER NAMES objc-compat/objc-compat.h objc-compat.h)
+   find_file( OBJC_COMPAT_HEADER NAMES objc-compat.h objc-compat/objc-compat.h)
    message( STATUS "OBJC_COMPAT_HEADER is ${OBJC_COMPAT_HEADER}")
 
    #
