@@ -7,12 +7,9 @@ endif()
 
 set( SOURCES
 src/Foundation.m
+src/Foundation-standalone.m
 )
 
 set( STAGE2_SOURCES
 src/MulleObjCLoader+Foundation.m
-)
-
-set( STANDALONE_SOURCES
-src/Foundation-standalone.m
 )

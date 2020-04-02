@@ -1,3 +1,8 @@
+## 0.17.0
+
+* now contains more libraries than before, while MulleFoundation got slimmer
+
+
 ## 0.16.0
 
 * new release
