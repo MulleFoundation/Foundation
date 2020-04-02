@@ -27,7 +27,7 @@ if( STANDALONE)
    endif()
 
    if( NOT STANDALONE_DEFINITIONS)
-      set( STANDALONE_DEFINITIONS ${FOUNDATION_DEFINITIONS})
+      set( STANDALONE_DEFINITIONS ${foundation_DEFINITIONS})
    endif()
 
    #
