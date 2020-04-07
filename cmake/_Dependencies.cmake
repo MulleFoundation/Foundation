@@ -203,7 +203,7 @@ if( NOT MULLE_OBJC_EXPAT_FOUNDATION_LIBRARY)
          endif()
       endforeach()
       #
-      # Search for "objc-loader.inc" in include directory.
+      # Search for "MulleObjCLoader+<name>.h" in include directory.
       # Disable with: `mulle-sourcetree mark MulleObjCExpatFoundation no-cmakeloader`
       #
       if( NOT NO_INHERIT_OBJC_LOADERS)
@@ -288,7 +288,7 @@ if( NOT MULLE_OBJC_INET_OS_FOUNDATION_LIBRARY)
          endif()
       endforeach()
       #
-      # Search for "objc-loader.inc" in include directory.
+      # Search for "MulleObjCLoader+<name>.h" in include directory.
       # Disable with: `mulle-sourcetree mark MulleObjCInetOSFoundation no-cmakeloader`
       #
       if( NOT NO_INHERIT_OBJC_LOADERS)
@@ -373,7 +373,7 @@ if( NOT MULLE_OBJC_HTTP_FOUNDATION_LIBRARY)
          endif()
       endforeach()
       #
-      # Search for "objc-loader.inc" in include directory.
+      # Search for "MulleObjCLoader+<name>.h" in include directory.
       # Disable with: `mulle-sourcetree mark MulleObjCHTTPFoundation no-cmakeloader`
       #
       if( NOT NO_INHERIT_OBJC_LOADERS)
