@@ -1,3 +1,7 @@
+### 0.17.1
+
+* new mulle-sde project structure
+
 ## 0.17.0
 
 * now contains more libraries than before, while MulleFoundation got slimmer
