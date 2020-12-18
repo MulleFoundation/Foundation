@@ -12,31 +12,32 @@
 #ifndef _Foundation_include_h__
 #define _Foundation_include_h__
 
-// How to tweak the following MulleFoundation #include
-//    remove:          `mulle-sourcetree mark MulleFoundation no-header`
-//    rename:          `mulle-sourcetree mark MulleFoundation set include whatever.h`
-//    toggle #import:  `mulle-sourcetree mark MulleFoundation [no-]import`
-//    toggle public:   `mulle-sourcetree mark MulleFoundation [no-]public`
-//    toggle optional: `mulle-sourcetree mark MulleFoundation [no-]require`
-//    remove for os:   `mulle-sourcetree mark MulleFoundation no-os-<osname>`
-# include <MulleFoundation/MulleFoundation.h>   // MulleFoundation
-
 // How to tweak the following mulle-objc-compat #include
-//    remove:          `mulle-sourcetree mark mulle-objc-compat no-header`
-//    rename:          `mulle-sourcetree mark mulle-objc-compat set include whatever.h`
-//    toggle #import:  `mulle-sourcetree mark mulle-objc-compat [no-]import`
-//    toggle public:   `mulle-sourcetree mark mulle-objc-compat [no-]public`
-//    toggle optional: `mulle-sourcetree mark mulle-objc-compat [no-]require`
-//    remove for os:   `mulle-sourcetree mark mulle-objc-compat no-os-<osname>`
-# include <mulle-objc-compat/mulle-objc-compat.h>   // mulle-objc-compat
+//    remove:             `mulle-sourcetree mark mulle-objc-compat no-header`
+//    rename:             `mulle-sde dependency|library set mulle-objc-compat include whatever.h`
+//    toggle #import:     `mulle-sourcetree mark mulle-objc-compat [no-]import`
+//    toggle localheader: `mulle-sourcetree mark mulle-objc-compat [no-]localheader`
+//    toggle public:      `mulle-sourcetree mark mulle-objc-compat [no-]public`
+//    toggle optional:    `mulle-sourcetree mark mulle-objc-compat [no-]require`
+//    remove for os:      `mulle-sourcetree mark mulle-objc-compat no-os-<osname>`
+# if defined( __has_include) && __has_include("mulle-objc-compat.h")
+#   include "mulle-objc-compat.h"   // mulle-objc-compat
+# else
+#   include <mulle-objc-compat/mulle-objc-compat.h>   // mulle-objc-compat
+# endif
 
 // How to tweak the following objc-compat #include
-//    remove:          `mulle-sourcetree mark objc-compat no-header`
-//    rename:          `mulle-sourcetree mark objc-compat set include whatever.h`
-//    toggle #import:  `mulle-sourcetree mark objc-compat [no-]import`
-//    toggle public:   `mulle-sourcetree mark objc-compat [no-]public`
-//    toggle optional: `mulle-sourcetree mark objc-compat [no-]require`
-//    remove for os:   `mulle-sourcetree mark objc-compat no-os-<osname>`
-# include <objc-compat/objc-compat.h>   // objc-compat
+//    remove:             `mulle-sourcetree mark objc-compat no-header`
+//    rename:             `mulle-sde dependency|library set objc-compat include whatever.h`
+//    toggle #import:     `mulle-sourcetree mark objc-compat [no-]import`
+//    toggle localheader: `mulle-sourcetree mark objc-compat [no-]localheader`
+//    toggle public:      `mulle-sourcetree mark objc-compat [no-]public`
+//    toggle optional:    `mulle-sourcetree mark objc-compat [no-]require`
+//    remove for os:      `mulle-sourcetree mark objc-compat no-os-<osname>`
+# if defined( __has_include) && __has_include("objc-compat.h")
+#   include "objc-compat.h"   // objc-compat
+# else
+#   include <objc-compat/objc-compat.h>   // objc-compat
+# endif
 
 #endif
