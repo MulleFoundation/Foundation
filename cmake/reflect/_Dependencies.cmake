@@ -8,7 +8,7 @@ endif()
 
 #
 # Generated from sourcetree: objc-compat;no-all-load,no-import,no-link;
-# Disable with: `mulle-sourcetree mark objc-compat no-link`
+# Disable with: `mulle-sourcetree mark objc-compat no-header`
 #
 if( NOT OBJC_COMPAT_HEADER)
    find_file( OBJC_COMPAT_HEADER NAMES objc-compat.h objc-compat/objc-compat.h)
@@ -73,8 +73,8 @@ endif()
 
 
 #
-# Generated from sourcetree: MulleFoundation;no-import,no-singlephase;
-# Disable with: `mulle-sourcetree mark MulleFoundation no-link`
+# Generated from sourcetree: MulleFoundation;no-singlephase;
+# Disable with: `mulle-sourcetree mark MulleFoundation no-header`
 #
 if( NOT MULLE_FOUNDATION_LIBRARY)
    find_library( MULLE_FOUNDATION_LIBRARY NAMES ${CMAKE_STATIC_LIBRARY_PREFIX}MulleFoundation${CMAKE_STATIC_LIBRARY_SUFFIX} MulleFoundation NO_CMAKE_SYSTEM_PATH NO_SYSTEM_ENVIRONMENT_PATH)
@@ -159,7 +159,7 @@ endif()
 
 #
 # Generated from sourcetree: MulleObjCExpatFoundation;no-require,no-singlephase;
-# Disable with: `mulle-sourcetree mark MulleObjCExpatFoundation no-link`
+# Disable with: `mulle-sourcetree mark MulleObjCExpatFoundation no-header`
 #
 if( NOT MULLE_OBJC_EXPAT_FOUNDATION_LIBRARY)
    find_library( MULLE_OBJC_EXPAT_FOUNDATION_LIBRARY NAMES ${CMAKE_STATIC_LIBRARY_PREFIX}MulleObjCExpatFoundation${CMAKE_STATIC_LIBRARY_SUFFIX} MulleObjCExpatFoundation NO_CMAKE_SYSTEM_PATH NO_SYSTEM_ENVIRONMENT_PATH)
@@ -244,7 +244,7 @@ endif()
 
 #
 # Generated from sourcetree: MulleObjCInetOSFoundation;no-require,no-singlephase;
-# Disable with: `mulle-sourcetree mark MulleObjCInetOSFoundation no-link`
+# Disable with: `mulle-sourcetree mark MulleObjCInetOSFoundation no-header`
 #
 if( NOT MULLE_OBJC_INET_OS_FOUNDATION_LIBRARY)
    find_library( MULLE_OBJC_INET_OS_FOUNDATION_LIBRARY NAMES ${CMAKE_STATIC_LIBRARY_PREFIX}MulleObjCInetOSFoundation${CMAKE_STATIC_LIBRARY_SUFFIX} MulleObjCInetOSFoundation NO_CMAKE_SYSTEM_PATH NO_SYSTEM_ENVIRONMENT_PATH)
@@ -329,7 +329,7 @@ endif()
 
 #
 # Generated from sourcetree: MulleObjCHTTPFoundation;no-require,no-singlephase;
-# Disable with: `mulle-sourcetree mark MulleObjCHTTPFoundation no-link`
+# Disable with: `mulle-sourcetree mark MulleObjCHTTPFoundation no-header`
 #
 if( NOT MULLE_OBJC_HTTP_FOUNDATION_LIBRARY)
    find_library( MULLE_OBJC_HTTP_FOUNDATION_LIBRARY NAMES ${CMAKE_STATIC_LIBRARY_PREFIX}MulleObjCHTTPFoundation${CMAKE_STATIC_LIBRARY_SUFFIX} MulleObjCHTTPFoundation NO_CMAKE_SYSTEM_PATH NO_SYSTEM_ENVIRONMENT_PATH)
@@ -413,8 +413,8 @@ endif()
 
 
 #
-# Generated from sourcetree: mulle-objc-compat;no-all-load,no-import;
-# Disable with: `mulle-sourcetree mark mulle-objc-compat no-link`
+# Generated from sourcetree: mulle-objc-compat;no-import;
+# Disable with: `mulle-sourcetree mark mulle-objc-compat no-header`
 #
 if( NOT MULLE_OBJC_COMPAT_LIBRARY)
    find_library( MULLE_OBJC_COMPAT_LIBRARY NAMES ${CMAKE_STATIC_LIBRARY_PREFIX}mulle-objc-compat${CMAKE_STATIC_LIBRARY_SUFFIX} mulle-objc-compat NO_CMAKE_SYSTEM_PATH NO_SYSTEM_ENVIRONMENT_PATH)
@@ -425,11 +425,11 @@ if( NOT MULLE_OBJC_COMPAT_LIBRARY)
    #
    if( MULLE_OBJC_COMPAT_LIBRARY)
       #
-      # Add MULLE_OBJC_COMPAT_LIBRARY to DEPENDENCY_LIBRARIES list.
+      # Add MULLE_OBJC_COMPAT_LIBRARY to ALL_LOAD_DEPENDENCY_LIBRARIES list.
       # Disable with: `mulle-sourcetree mark mulle-objc-compat no-cmakeadd`
       #
-      set( DEPENDENCY_LIBRARIES
-         ${DEPENDENCY_LIBRARIES}
+      set( ALL_LOAD_DEPENDENCY_LIBRARIES
+         ${ALL_LOAD_DEPENDENCY_LIBRARIES}
          ${MULLE_OBJC_COMPAT_LIBRARY}
          CACHE INTERNAL "need to cache this"
       )
@@ -474,6 +474,23 @@ if( NOT MULLE_OBJC_COMPAT_LIBRARY)
             message( STATUS "${_TMP_MULLE_OBJC_COMPAT_DIR}/DependenciesAndLibraries.cmake not found")
          endif()
       endforeach()
+      #
+      # Search for "MulleObjCLoader+<name>.h" in include directory.
+      # Disable with: `mulle-sourcetree mark mulle-objc-compat no-cmakeloader`
+      #
+      if( NOT NO_INHERIT_OBJC_LOADERS)
+         foreach( _TMP_MULLE_OBJC_COMPAT_NAME "mulle-objc-compat")
+            set( _TMP_MULLE_OBJC_COMPAT_FILE "${_TMP_MULLE_OBJC_COMPAT_ROOT}/include/${_TMP_MULLE_OBJC_COMPAT_NAME}/MulleObjCLoader+${_TMP_MULLE_OBJC_COMPAT_NAME}.h")
+            if( EXISTS "${_TMP_MULLE_OBJC_COMPAT_FILE}")
+               set( INHERITED_OBJC_LOADERS
+                  ${INHERITED_OBJC_LOADERS}
+                  ${_TMP_MULLE_OBJC_COMPAT_FILE}
+                  CACHE INTERNAL "need to cache this"
+               )
+               break()
+            endif()
+         endforeach()
+      endif()
    else()
       message( FATAL_ERROR "MULLE_OBJC_COMPAT_LIBRARY was not found")
    endif()

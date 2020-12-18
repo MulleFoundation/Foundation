@@ -12,8 +12,12 @@
 #ifndef _Foundation_import_private_h__
 #define _Foundation_import_private_h__
 
-#include "_Foundation-include-private.h"
-
 /* no headers */
+
+#ifdef __has_include
+# if __has_include( "_Foundation-include.h")
+#  include "_Foundation-include-private.h"
+# endif
+#endif
 
 #endif
