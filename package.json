@@ -1,0 +1,21 @@
+{
+   "name" : "Foundation",
+   "version" : "0.18.0",
+   "description" : "💍 MulleFoundation with improved compatibility and legacy support",
+   "homepage" : "https://github.com/MulleFoundation/Foundation",
+   "bugs" : "https://github.com/MulleFoundation/Foundation/issues",
+   "keywords" : [],
+   "license" : "UNLICENSED",
+   "repository" : {
+      "type" : "git",
+      "url" : "MulleFoundation/Foundation"
+   },
+   "dependencies" : {
+      "MulleFoundation" : "MulleFoundation/MulleFoundation",
+      "MulleObjCExpatFoundation" : "MulleFoundation/MulleObjCExpatFoundation",
+      "MulleObjCInetOSFoundation" : "MulleFoundation/MulleObjCInetOSFoundation",
+      "MulleObjCHTTPFoundation" : "MulleWeb/MulleObjCHTTPFoundation",
+      "mulle-objc-compat" : "mulle-objc/mulle-objc-compat",
+      "objc-compat" : "MulleFoundation/objc-compat"
+   }
+}
