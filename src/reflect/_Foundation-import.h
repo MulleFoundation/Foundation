@@ -16,21 +16,15 @@
 //    remove:             `mulle-sourcetree mark MulleFoundation no-header`
 //    rename:             `mulle-sde dependency|library set MulleFoundation include whatever.h`
 //    toggle #import:     `mulle-sourcetree mark MulleFoundation [no-]import`
-//    toggle localheader: `mulle-sourcetree mark MulleFoundation [no-]localheader`
 //    toggle public:      `mulle-sourcetree mark MulleFoundation [no-]public`
 //    toggle optional:    `mulle-sourcetree mark MulleFoundation [no-]require`
 //    remove for os:      `mulle-sourcetree mark MulleFoundation no-os-<osname>`
-# if defined( __has_include) && __has_include("MulleFoundation.h")
-#   import "MulleFoundation.h"   // MulleFoundation
-# else
-#   import <MulleFoundation/MulleFoundation.h>   // MulleFoundation
-# endif
+# import <MulleFoundation/MulleFoundation.h>   // MulleFoundation
 
 // How to tweak the following MulleObjCExpatFoundation #import
 //    remove:             `mulle-sourcetree mark MulleObjCExpatFoundation no-header`
 //    rename:             `mulle-sde dependency|library set MulleObjCExpatFoundation include whatever.h`
 //    toggle #import:     `mulle-sourcetree mark MulleObjCExpatFoundation [no-]import`
-//    toggle localheader: `mulle-sourcetree mark MulleObjCExpatFoundation [no-]localheader`
 //    toggle public:      `mulle-sourcetree mark MulleObjCExpatFoundation [no-]public`
 //    toggle optional:    `mulle-sourcetree mark MulleObjCExpatFoundation [no-]require`
 //    remove for os:      `mulle-sourcetree mark MulleObjCExpatFoundation no-os-<osname>`
@@ -45,7 +39,6 @@
 //    remove:             `mulle-sourcetree mark MulleObjCInetOSFoundation no-header`
 //    rename:             `mulle-sde dependency|library set MulleObjCInetOSFoundation include whatever.h`
 //    toggle #import:     `mulle-sourcetree mark MulleObjCInetOSFoundation [no-]import`
-//    toggle localheader: `mulle-sourcetree mark MulleObjCInetOSFoundation [no-]localheader`
 //    toggle public:      `mulle-sourcetree mark MulleObjCInetOSFoundation [no-]public`
 //    toggle optional:    `mulle-sourcetree mark MulleObjCInetOSFoundation [no-]require`
 //    remove for os:      `mulle-sourcetree mark MulleObjCInetOSFoundation no-os-<osname>`
@@ -60,7 +53,6 @@
 //    remove:             `mulle-sourcetree mark MulleObjCHTTPFoundation no-header`
 //    rename:             `mulle-sde dependency|library set MulleObjCHTTPFoundation include whatever.h`
 //    toggle #import:     `mulle-sourcetree mark MulleObjCHTTPFoundation [no-]import`
-//    toggle localheader: `mulle-sourcetree mark MulleObjCHTTPFoundation [no-]localheader`
 //    toggle public:      `mulle-sourcetree mark MulleObjCHTTPFoundation [no-]public`
 //    toggle optional:    `mulle-sourcetree mark MulleObjCHTTPFoundation [no-]require`
 //    remove for os:      `mulle-sourcetree mark MulleObjCHTTPFoundation no-os-<osname>`
