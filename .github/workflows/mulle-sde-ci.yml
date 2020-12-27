@@ -36,6 +36,9 @@ jobs:
     - name: Mulle-SDE Fetch
       run: mulle-sde fetch
 
+    - name: Mulle-SDE Fetch
+      run: mulle-sde fetch
+
     - name: Mulle-SDE Craft
       run: mulle-sde craft --${BUILD_TYPE:-release}
 
