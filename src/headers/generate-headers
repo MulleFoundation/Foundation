@@ -1,0 +1,254 @@
+#!/bin/sh
+
+
+#
+# Some people try to save build time bypassing the Foundation envelope
+# header. We can prevent a compile error, but the compilation ain't getting
+# any faster ;)
+#
+CLASSES="
+NSObject
+NSAutoreleasePool
+NSCoder
+NSLock
+NSRange
+NSProxy
+
+NSArray
+NSDictionary
+NSSet
+NSEnumerator
+
+NSMutableArray
+NSMutableDictionary
+NSMutableSet
+
+NSCalendarDate
+NSCharacterSet
+NSData
+NSDate
+NSDecimal
+NSDecimalNumber
+NSNumber
+NSValue
+NSString
+NSNull
+
+NSFormatter
+NSDateFormatter
+NSNumberFormatter
+
+NSMutableCharacterSet
+NSMutableData
+NSMutableString
+
+NSBundle
+NSCalendar
+NSException
+NSError
+NSException
+NSHost
+NSNotification
+NSLocale
+NSScanner
+NSURL
+NSZone
+
+NSArchiver
+NSByteOrder
+NSPathUtilities
+NSFileHandle
+NSFileHManager
+NSProcessInfo
+NSRunLoop
+NSTask
+NSThread
+NSTimeZone
+NSTimer
+NSUndoManager
+NSUserDefaults
+"
+
+
+for name in $CLASSES
+do
+   if [ ! -z "${name}" ]
+   then
+      echo "#import \"Foundation.h\"" > "${name}.h"
+   fi
+done
+
+mulle-sde reflect
+
+exit 0
+
+
+# Big Sur Foundation Headers
+
+ Foundation.h
+ FoundationErrors.h
+ FoundationLegacySwiftCompatibility.h
+ NSAffineTransform.h
+ NSAppleEventDescriptor.h
+ NSAppleEventManager.h
+ NSAppleScript.h
+ NSArchiver.h
+ NSArray.h
+ NSAttributedString.h
+ NSAutoreleasePool.h
+ NSBackgroundActivityScheduler.h
+ NSBundle.h
+ NSByteCountFormatter.h
+ NSByteOrder.h
+ NSCache.h
+ NSCalendar.h
+ NSCalendarDate.h
+ NSCharacterSet.h
+ NSClassDescription.h
+ NSCoder.h
+ NSComparisonPredicate.h
+ NSCompoundPredicate.h
+ NSConnection.h
+ NSData.h
+ NSDate.h
+ NSDateComponentsFormatter.h
+ NSDateFormatter.h
+ NSDateInterval.h
+ NSDateIntervalFormatter.h
+ NSDebug.h
+ NSDecimal.h
+ NSDecimalNumber.h
+ NSDictionary.h
+ NSDistantObject.h
+ NSDistributedLock.h
+ NSDistributedNotificationCenter.h
+ NSEnergyFormatter.h
+ NSEnumerator.h
+ NSError.h
+ NSException.h
+ NSExpression.h
+ NSExtensionContext.h
+ NSExtensionItem.h
+ NSExtensionRequestHandling.h
+ NSFileCoordinator.h
+ NSFileHandle.h
+ NSFileManager.h
+ NSFilePresenter.h
+ NSFileVersion.h
+ NSFileWrapper.h
+ NSFormatter.h
+ NSGarbageCollector.h
+ NSGeometry.h
+ NSHFSFileTypes.h
+ NSHTTPCookie.h
+ NSHTTPCookieStorage.h
+ NSHashTable.h
+ NSHost.h
+ NSISO8601DateFormatter.h
+ NSIndexPath.h
+ NSIndexSet.h
+ NSInvocation.h
+ NSItemProvider.h
+ NSItemProviderReadingWriting.h
+ NSJSONSerialization.h
+ NSKeyValueCoding.h
+ NSKeyValueObserving.h
+ NSKeyedArchiver.h
+ NSLengthFormatter.h
+ NSLinguisticTagger.h
+ NSListFormatter.h
+ NSLocale.h
+ NSLock.h
+ NSMapTable.h
+ NSMassFormatter.h
+ NSMeasurement.h
+ NSMeasurementFormatter.h
+ NSMetadata.h
+ NSMetadataAttributes.h
+ NSMethodSignature.h
+ NSNetServices.h
+ NSNotification.h
+ NSNotificationQueue.h
+ NSNull.h
+ NSNumberFormatter.h
+ NSObjCRuntime.h
+ NSObject.h
+ NSObjectScripting.h
+ NSOperation.h
+ NSOrderedCollectionChange.h
+ NSOrderedCollectionDifference.h
+ NSOrderedSet.h
+ NSOrthography.h
+ NSPathUtilities.h
+ NSPersonNameComponents.h
+ NSPersonNameComponentsFormatter.h
+ NSPointerArray.h
+ NSPointerFunctions.h
+ NSPort.h
+ NSPortCoder.h
+ NSPortMessage.h
+ NSPortNameServer.h
+ NSPredicate.h
+ NSProcessInfo.h
+ NSProgress.h
+ NSPropertyList.h
+ NSProtocolChecker.h
+ NSProxy.h
+ NSRange.h
+ NSRegularExpression.h
+ NSRelativeDateTimeFormatter.h
+ NSRunLoop.h
+ NSScanner.h
+ NSScriptClassDescription.h
+ NSScriptCoercionHandler.h
+ NSScriptCommand.h
+ NSScriptCommandDescription.h
+ NSScriptExecutionContext.h
+ NSScriptKeyValueCoding.h
+ NSScriptObjectSpecifiers.h
+ NSScriptStandardSuiteCommands.h
+ NSScriptSuiteRegistry.h
+ NSScriptWhoseTests.h
+ NSSet.h
+ NSSortDescriptor.h
+ NSSpellServer.h
+ NSStream.h
+ NSString.h
+ NSTask.h
+ NSTextCheckingResult.h
+ NSThread.h
+ NSTimeZone.h
+ NSTimer.h
+ NSURL.h
+ NSURLAuthenticationChallenge.h
+ NSURLCache.h
+ NSURLConnection.h
+ NSURLCredential.h
+ NSURLCredentialStorage.h
+ NSURLDownload.h
+ NSURLError.h
+ NSURLHandle.h
+ NSURLProtectionSpace.h
+ NSURLProtocol.h
+ NSURLRequest.h
+ NSURLResponse.h
+ NSURLSession.h
+ NSUUID.h
+ NSUbiquitousKeyValueStore.h
+ NSUndoManager.h
+ NSUnit.h
+ NSUserActivity.h
+ NSUserDefaults.h
+ NSUserNotification.h
+ NSUserScriptTask.h
+ NSValue.h
+ NSValueTransformer.h
+ NSXMLDTD.h
+ NSXMLDTDNode.h
+ NSXMLDocument.h
+ NSXMLElement.h
+ NSXMLNode.h
+ NSXMLNodeOptions.h
+ NSXMLParser.h
+ NSXPCConnection.h
+ NSZone.h
