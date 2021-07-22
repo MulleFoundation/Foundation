@@ -673,7 +673,7 @@ export MULLE_OBJC_INET_FOUNDATION_NODETYPE="git"
 #
 # MulleObjCInetFoundation url: ${MULLE_OBJC_INET_FOUNDATION_URL:-https://github.com/MulleWeb/MulleObjCInetFoundation/archive/${MULLE_TAG}.tar.gz}
 #
-export MULLE_OBJC_INET_FOUNDATION_URL="https://github.com/mulle-c/MulleObjCInetFoundation.git"
+export MULLE_OBJC_INET_FOUNDATION_URL="https://github.com/MulleWeb/MulleObjCInetFoundation.git"
 
 
 #
@@ -734,41 +734,5 @@ export MULLE_HTTP_URL="https://github.com/mulle-c/mulle-http.git"
 # mulle-http branch: ${MULLE_HTTP_BRANCH}
 #
 export MULLE_HTTP_BRANCH="prerelease"
-
-
-#
-# mulle-objc-compat nodetype: ${MULLE_OBJC_COMPAT_NODETYPE:-tar}
-#
-export MULLE_OBJC_COMPAT_NODETYPE="git"
-
-
-#
-# mulle-objc-compat url: ${MULLE_OBJC_COMPAT_URL:-https://github.com/mulle-objc/mulle-objc-compat/archive/${MULLE_TAG}.tar.gz}
-#
-export MULLE_OBJC_COMPAT_URL="https://github.com/mulle-objc/mulle-objc-compat.git"
-
-
-#
-# mulle-objc-compat branch: ${MULLE_OBJC_COMPAT_BRANCH}
-#
-export MULLE_OBJC_COMPAT_BRANCH="prerelease"
-
-
-#
-# objc-compat nodetype: ${OBJC_COMPAT_NODETYPE:-tar}
-#
-export OBJC_COMPAT_NODETYPE="git"
-
-
-#
-# objc-compat url: ${OBJC_COMPAT_URL:-https://github.com/MulleFoundation/objc-compat/archive/${MULLE_TAG}.tar.gz}
-#
-export OBJC_COMPAT_URL="https://github.com/MulleFoundation/objc-compat.git"
-
-
-#
-# objc-compat branch: ${OBJC_COMPAT_BRANCH}
-#
-export OBJC_COMPAT_BRANCH="prerelease"
 
 
