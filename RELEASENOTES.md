@@ -1,6 +1,6 @@
 ## 0.19.0
 
-* Various small improvements
+* add some mimicry headers for ease of porting
 
 
 ## 0.18.0
