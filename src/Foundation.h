@@ -28,7 +28,8 @@ static inline unsigned int   Foundation_get_version_patch( void)
 }
 
 
-extern uint32_t   Foundation_get_version( void);
+FOUNDATION_EXTERN_GLOBAL
+uint32_t   Foundation_get_version( void);
 
 /*
    Add other library headers here like so, for exposure to library

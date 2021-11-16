@@ -21,6 +21,11 @@
 
 #include "_Foundation-include.h"
 
+#ifndef FOUNDATION_EXTERN_GLOBAL
+# define FOUNDATION_EXTERN_GLOBAL MULLE_C_EXTERN_GLOBAL
+#endif
+
+
 /* You can add some more include statements here */
 
 #endif
