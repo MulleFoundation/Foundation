@@ -1,3 +1,4 @@
+      { @selector( MulleObjCLoader), @selector( MulleBase64) },      // 47a9beb6;MulleObjCLoader;22440994;MulleBase64
       { @selector( MulleObjCLoader), @selector( MulleFoundation) },      // 47a9beb6;MulleObjCLoader;46ed3b36;MulleFoundation
       { @selector( MulleObjCLoader), @selector( MulleObjCArchiverFoundation) },      // 47a9beb6;MulleObjCLoader;98076059;MulleObjCArchiverFoundation
       { @selector( MulleObjCLoader), @selector( MulleObjCCalendarFoundation) },      // 47a9beb6;MulleObjCLoader;6b608d36;MulleObjCCalendarFoundation
