@@ -7,7 +7,7 @@
  *
  *  version:  major, minor, patch
  */
-#define FOUNDATION_VERSION  ((0 << 20) | (19 << 8) | 0)
+#define FOUNDATION_VERSION  ((0 << 20) | (20 << 8) | 0)
 
 
 static inline unsigned int   Foundation_get_version_major( void)
@@ -37,3 +37,10 @@ uint32_t   Foundation_get_version( void);
 
    # include "foo.h"
 */
+
+
+#ifdef __has_include
+# if __has_include( "_Foundation-versioncheck.h")
+#  include "_Foundation-versioncheck.h"
+# endif
+#endif

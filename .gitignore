@@ -15,6 +15,7 @@ build-*.d/
 var/
 old/
 src.old/
+research/
 tmp/
 xcuserdata/
 
