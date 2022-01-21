@@ -13,15 +13,14 @@ Library                                                                         
 [MulleObjCExpatFoundation](//github.com/MulleFoundation/MulleObjCExpatFoundation)  | XML property lists
 [MulleObjCJSMNFoundation](//github.com/MulleWeb/MulleObjCJSMNFoundation)           | JSON property lists
 [MulleObjCHTTPFoundation](//github.com/MulleWeb/MulleObjCHTTPFoundation)           | NSURL handling
-[objc-compat](//github.com/MulleFoundation/objc-compat)                            | Apple runtime compatibility
+[objc-compat](//github.com/MulleFoundation/objc-compat)                            | Objective-C runtime glue
+[mulle-objc-compat](//github.com/mulle-objc/mulle-objc-compat)                     | Apple runtime compatibility
 
 
 
 ### You are here
 
 ![Overview](overview.dot.svg)
-
-
 
 
 ####  Legacy technologies
