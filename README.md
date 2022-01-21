@@ -37,23 +37,14 @@ everything you need.
 
 ### Legacy install
 
-```
-mulle-sde install --standalone \
-                  --prefix "/usr/local" \
-                  "https://github.com/MulleFoundation/Foundation/archive/latest.tar.gz"
+This builds everything and installs header and libraries into a folder of
+your choice like `/usr/local` or `${HOME}`:
+
+``` bash
+mulle-sde install --prefix "/usr/local" \
+                   "https://github.com/MulleFoundation/Foundation/archive/latest.tar.gz"
 ```
 
-#### Legacy install prerelease
-
-For testing before release:
-
-```
-source `curl -L https://raw.githubusercontent.com/MulleFoundation/Foundation/prerelease/.mulle/etc/env/environment-host-travis-ci-prerelease.sh`
-mulle-sde install --standalone \
-                  --branch prerelease \
-                  --prefix "/tmp/usr" \
-                  "https://github.com/MulleFoundation/Foundation.git"
-```
 
 ## Author
 
