@@ -7,7 +7,7 @@
  *
  *  version:  major, minor, patch
  */
-#define FOUNDATION_VERSION  ((0 << 20) | (20 << 8) | 0)
+#define FOUNDATION_VERSION  ((0 << 20) | (21 << 8) | 0)
 
 
 static inline unsigned int   Foundation_get_version_major( void)
@@ -28,7 +28,7 @@ static inline unsigned int   Foundation_get_version_patch( void)
 }
 
 
-FOUNDATION_EXTERN_GLOBAL
+FOUNDATION_GLOBAL
 uint32_t   Foundation_get_version( void);
 
 /*

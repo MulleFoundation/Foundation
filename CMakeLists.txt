@@ -1,7 +1,6 @@
-cmake_minimum_required( VERSION 3.1)
+cmake_minimum_required( VERSION 3.15)
 
 project( Foundation C)
-add_definitions( -DFOUNDATION_EXTERN_GLOBAL=extern)
 
 
 
