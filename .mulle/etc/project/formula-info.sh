@@ -17,16 +17,9 @@ LANGUAGE="objc"             # c,cpp, objc, bash ...
 # DEPENDENCIES and BUILD_DEPENDENCIES will be evaled later!
 # So keep them single quoted.
 #
-BUILD_DEPENDENCIES='mulle-kybernetik/software/mulle-sde
-mulle-kybernetik/software/mulle-craft
-mulle-kybernetik/software/mulle-dispense
-mulle-kybernetik/software/mulle-fetch
-mulle-kybernetik/software/mulle-make
-mulle-kybernetik/software/mulle-platform
-mulle-kybernetik/software/mulle-sourcetree
-mulle-kybernetik/software/mulle-bashfunctions
+DEPENDENCIES='mulle-objc/software/mulle-clang
+mulle-kybernetik/software/mulle-sde
 cmake
 ninja'
 
-DEPENDENCIES="codeon-gmbh/software/mulle-clang"
 
