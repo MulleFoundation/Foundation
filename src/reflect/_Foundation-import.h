@@ -13,25 +13,25 @@
 
 // You can tweak the following #import with these commands.
 // (Use 445683ED-0F8E-41AA-993A-DF3A42E5813A instead of MulleFoundation if there are duplicate entries)
-//    remove:             `mulle-sde dependency mark MulleFoundation no-header`
-//    rename:             `mulle-sde dependency|library set MulleFoundation include whatever.h`
-//    reorder:            `mulle-sde dependency move MulleFoundation <up|down>`
+//    remove #import: : `mulle-sde dependency mark MulleFoundation no-header`
+//    rename:              `mulle-sde dependency|library set MulleFoundation include whatever.h`
+//    reorder:             `mulle-sde dependency move MulleFoundation <up|down>`
 //    toggle #import:     `mulle-sde dependency mark MulleFoundation [no-]import`
-//    toggle public:      `mulle-sde dependency mark MulleFoundation [no-]public`
-//    toggle optional:    `mulle-sde dependency mark MulleFoundation [no-]require`
-//    remove for platform:`mulle-sde dependency mark MulleFoundation no-platform-<uname>`
+//    toggle public:       `mulle-sde dependency mark MulleFoundation [no-]public`
+//    toggle optional:     `mulle-sde dependency mark MulleFoundation [no-]require`
+//    remove for platform: `mulle-sde dependency mark MulleFoundation no-platform-<uname>`
 //        (use `mulle-sourcetree-to-c --unames` to list known values)
 #import <MulleFoundation/MulleFoundation.h>   // MulleFoundation
 
 // You can tweak the following #import with these commands.
 // (Use 3D67B37E-41CA-4A09-9BF5-F3F9A87C9592 instead of MulleObjCExpatFoundation if there are duplicate entries)
-//    remove:             `mulle-sde dependency mark MulleObjCExpatFoundation no-header`
-//    rename:             `mulle-sde dependency|library set MulleObjCExpatFoundation include whatever.h`
-//    reorder:            `mulle-sde dependency move MulleObjCExpatFoundation <up|down>`
+//    remove #import: : `mulle-sde dependency mark MulleObjCExpatFoundation no-header`
+//    rename:              `mulle-sde dependency|library set MulleObjCExpatFoundation include whatever.h`
+//    reorder:             `mulle-sde dependency move MulleObjCExpatFoundation <up|down>`
 //    toggle #import:     `mulle-sde dependency mark MulleObjCExpatFoundation [no-]import`
-//    toggle public:      `mulle-sde dependency mark MulleObjCExpatFoundation [no-]public`
-//    toggle optional:    `mulle-sde dependency mark MulleObjCExpatFoundation [no-]require`
-//    remove for platform:`mulle-sde dependency mark MulleObjCExpatFoundation no-platform-<uname>`
+//    toggle public:       `mulle-sde dependency mark MulleObjCExpatFoundation [no-]public`
+//    toggle optional:     `mulle-sde dependency mark MulleObjCExpatFoundation [no-]require`
+//    remove for platform: `mulle-sde dependency mark MulleObjCExpatFoundation no-platform-<uname>`
 //        (use `mulle-sourcetree-to-c --unames` to list known values)
 #ifdef __has_include
 # if __has_include(<MulleObjCExpatFoundation/MulleObjCExpatFoundation.h>)
@@ -42,13 +42,13 @@
 
 // You can tweak the following #import with these commands.
 // (Use E5624C70-7EEE-4478-A21F-C30A91F71EC8 instead of MulleObjCInetOSFoundation if there are duplicate entries)
-//    remove:             `mulle-sde dependency mark MulleObjCInetOSFoundation no-header`
-//    rename:             `mulle-sde dependency|library set MulleObjCInetOSFoundation include whatever.h`
-//    reorder:            `mulle-sde dependency move MulleObjCInetOSFoundation <up|down>`
+//    remove #import: : `mulle-sde dependency mark MulleObjCInetOSFoundation no-header`
+//    rename:              `mulle-sde dependency|library set MulleObjCInetOSFoundation include whatever.h`
+//    reorder:             `mulle-sde dependency move MulleObjCInetOSFoundation <up|down>`
 //    toggle #import:     `mulle-sde dependency mark MulleObjCInetOSFoundation [no-]import`
-//    toggle public:      `mulle-sde dependency mark MulleObjCInetOSFoundation [no-]public`
-//    toggle optional:    `mulle-sde dependency mark MulleObjCInetOSFoundation [no-]require`
-//    remove for platform:`mulle-sde dependency mark MulleObjCInetOSFoundation no-platform-<uname>`
+//    toggle public:       `mulle-sde dependency mark MulleObjCInetOSFoundation [no-]public`
+//    toggle optional:     `mulle-sde dependency mark MulleObjCInetOSFoundation [no-]require`
+//    remove for platform: `mulle-sde dependency mark MulleObjCInetOSFoundation no-platform-<uname>`
 //        (use `mulle-sourcetree-to-c --unames` to list known values)
 #ifdef __has_include
 # if __has_include(<MulleObjCInetOSFoundation/MulleObjCInetOSFoundation.h>)
@@ -59,13 +59,13 @@
 
 // You can tweak the following #import with these commands.
 // (Use AE716CD1-2BDB-46E3-936B-8C33F16B71EF instead of MulleObjCHTTPFoundation if there are duplicate entries)
-//    remove:             `mulle-sde dependency mark MulleObjCHTTPFoundation no-header`
-//    rename:             `mulle-sde dependency|library set MulleObjCHTTPFoundation include whatever.h`
-//    reorder:            `mulle-sde dependency move MulleObjCHTTPFoundation <up|down>`
+//    remove #import: : `mulle-sde dependency mark MulleObjCHTTPFoundation no-header`
+//    rename:              `mulle-sde dependency|library set MulleObjCHTTPFoundation include whatever.h`
+//    reorder:             `mulle-sde dependency move MulleObjCHTTPFoundation <up|down>`
 //    toggle #import:     `mulle-sde dependency mark MulleObjCHTTPFoundation [no-]import`
-//    toggle public:      `mulle-sde dependency mark MulleObjCHTTPFoundation [no-]public`
-//    toggle optional:    `mulle-sde dependency mark MulleObjCHTTPFoundation [no-]require`
-//    remove for platform:`mulle-sde dependency mark MulleObjCHTTPFoundation no-platform-<uname>`
+//    toggle public:       `mulle-sde dependency mark MulleObjCHTTPFoundation [no-]public`
+//    toggle optional:     `mulle-sde dependency mark MulleObjCHTTPFoundation [no-]require`
+//    remove for platform: `mulle-sde dependency mark MulleObjCHTTPFoundation no-platform-<uname>`
 //        (use `mulle-sourcetree-to-c --unames` to list known values)
 #ifdef __has_include
 # if __has_include(<MulleObjCHTTPFoundation/MulleObjCHTTPFoundation.h>)
