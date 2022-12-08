@@ -15,6 +15,7 @@ endif()
 # Generated from sourcetree: 1d5ee5ef-0008-4953-906c-010b0f2438dc;objc-compat;no-all-load,no-cmake-searchpath,no-import,no-link;
 # Disable with : `mulle-sourcetree mark objc-compat no-header`
 # Disable for this platform: `mulle-sourcetree mark objc-compat no-cmake-platform-${MULLE_UNAME}`
+# Disable for a sdk: `mulle-sourcetree mark objc-compat no-cmake-sdk-<name>`
 #
 if( NOT OBJC_COMPAT_HEADER)
    find_file( OBJC_COMPAT_HEADER NAMES objc-compat.h objc-compat/objc-compat.h)
@@ -83,6 +84,7 @@ endif()
 # Generated from sourcetree: 445683ED-0F8E-41AA-993A-DF3A42E5813A;MulleFoundation;no-singlephase;
 # Disable with : `mulle-sourcetree mark MulleFoundation no-link`
 # Disable for this platform: `mulle-sourcetree mark MulleFoundation no-cmake-platform-${MULLE_UNAME}`
+# Disable for a sdk: `mulle-sourcetree mark MulleFoundation no-cmake-sdk-<name>`
 #
 if( NOT MULLE_FOUNDATION_LIBRARY)
    find_library( MULLE_FOUNDATION_LIBRARY NAMES ${CMAKE_STATIC_LIBRARY_PREFIX}MulleFoundation${CMAKE_DEBUG_POSTFIX}${CMAKE_STATIC_LIBRARY_SUFFIX} ${CMAKE_STATIC_LIBRARY_PREFIX}MulleFoundation${CMAKE_STATIC_LIBRARY_SUFFIX} MulleFoundation NO_CMAKE_SYSTEM_PATH NO_SYSTEM_ENVIRONMENT_PATH)
@@ -163,6 +165,7 @@ endif()
 # Generated from sourcetree: 3D67B37E-41CA-4A09-9BF5-F3F9A87C9592;MulleObjCExpatFoundation;no-require,no-singlephase;
 # Disable with : `mulle-sourcetree mark MulleObjCExpatFoundation no-link`
 # Disable for this platform: `mulle-sourcetree mark MulleObjCExpatFoundation no-cmake-platform-${MULLE_UNAME}`
+# Disable for a sdk: `mulle-sourcetree mark MulleObjCExpatFoundation no-cmake-sdk-<name>`
 #
 if( NOT MULLE_OBJC_EXPAT_FOUNDATION_LIBRARY)
    find_library( MULLE_OBJC_EXPAT_FOUNDATION_LIBRARY NAMES ${CMAKE_STATIC_LIBRARY_PREFIX}MulleObjCExpatFoundation${CMAKE_DEBUG_POSTFIX}${CMAKE_STATIC_LIBRARY_SUFFIX} ${CMAKE_STATIC_LIBRARY_PREFIX}MulleObjCExpatFoundation${CMAKE_STATIC_LIBRARY_SUFFIX} MulleObjCExpatFoundation NO_CMAKE_SYSTEM_PATH NO_SYSTEM_ENVIRONMENT_PATH)
@@ -243,6 +246,7 @@ endif()
 # Generated from sourcetree: E5624C70-7EEE-4478-A21F-C30A91F71EC8;MulleObjCInetOSFoundation;no-require,no-singlephase;
 # Disable with : `mulle-sourcetree mark MulleObjCInetOSFoundation no-link`
 # Disable for this platform: `mulle-sourcetree mark MulleObjCInetOSFoundation no-cmake-platform-${MULLE_UNAME}`
+# Disable for a sdk: `mulle-sourcetree mark MulleObjCInetOSFoundation no-cmake-sdk-<name>`
 #
 if( NOT MULLE_OBJC_INET_OS_FOUNDATION_LIBRARY)
    find_library( MULLE_OBJC_INET_OS_FOUNDATION_LIBRARY NAMES ${CMAKE_STATIC_LIBRARY_PREFIX}MulleObjCInetOSFoundation${CMAKE_DEBUG_POSTFIX}${CMAKE_STATIC_LIBRARY_SUFFIX} ${CMAKE_STATIC_LIBRARY_PREFIX}MulleObjCInetOSFoundation${CMAKE_STATIC_LIBRARY_SUFFIX} MulleObjCInetOSFoundation NO_CMAKE_SYSTEM_PATH NO_SYSTEM_ENVIRONMENT_PATH)
@@ -323,6 +327,7 @@ endif()
 # Generated from sourcetree: AE716CD1-2BDB-46E3-936B-8C33F16B71EF;MulleObjCHTTPFoundation;no-require,no-singlephase;
 # Disable with : `mulle-sourcetree mark MulleObjCHTTPFoundation no-link`
 # Disable for this platform: `mulle-sourcetree mark MulleObjCHTTPFoundation no-cmake-platform-${MULLE_UNAME}`
+# Disable for a sdk: `mulle-sourcetree mark MulleObjCHTTPFoundation no-cmake-sdk-<name>`
 #
 if( NOT MULLE_OBJC_HTTP_FOUNDATION_LIBRARY)
    find_library( MULLE_OBJC_HTTP_FOUNDATION_LIBRARY NAMES ${CMAKE_STATIC_LIBRARY_PREFIX}MulleObjCHTTPFoundation${CMAKE_DEBUG_POSTFIX}${CMAKE_STATIC_LIBRARY_SUFFIX} ${CMAKE_STATIC_LIBRARY_PREFIX}MulleObjCHTTPFoundation${CMAKE_STATIC_LIBRARY_SUFFIX} MulleObjCHTTPFoundation NO_CMAKE_SYSTEM_PATH NO_SYSTEM_ENVIRONMENT_PATH)
@@ -403,6 +408,7 @@ endif()
 # Generated from sourcetree: BD0E4FC1-56D9-4EF4-91D0-862D520A2ADC;mulle-objc-compat;no-cmake-searchpath,no-import;
 # Disable with : `mulle-sourcetree mark mulle-objc-compat no-link`
 # Disable for this platform: `mulle-sourcetree mark mulle-objc-compat no-cmake-platform-${MULLE_UNAME}`
+# Disable for a sdk: `mulle-sourcetree mark mulle-objc-compat no-cmake-sdk-<name>`
 #
 if( NOT MULLE_OBJC_COMPAT_LIBRARY)
    find_library( MULLE_OBJC_COMPAT_LIBRARY NAMES ${CMAKE_STATIC_LIBRARY_PREFIX}mulle-objc-compat${CMAKE_DEBUG_POSTFIX}${CMAKE_STATIC_LIBRARY_SUFFIX} ${CMAKE_STATIC_LIBRARY_PREFIX}mulle-objc-compat${CMAKE_STATIC_LIBRARY_SUFFIX} mulle-objc-compat NO_CMAKE_SYSTEM_PATH NO_SYSTEM_ENVIRONMENT_PATH)

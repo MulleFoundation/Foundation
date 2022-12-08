@@ -46,6 +46,28 @@ mulle-sde install --prefix "/usr/local" \
 ```
 
 
+### Manual Installation
+
+*Don't do this, it will take hours...*
+
+Install the requirements:
+
+Requirements                                                    | Description
+----------------------------------------------------------------|-----------------------
+[MulleFoundation](//github.com/MulleFoundation/MulleFoundation) | MulleFoundation and its dependencies
+
+Install into `/usr/local`:
+
+
+``` sh
+cmake -B build \
+      -DCMAKE_INSTALL_PREFIX=/usr/local \
+      -DCMAKE_PREFIX_PATH=/usr/local \
+      -DCMAKE_BUILD_TYPE=Release &&
+cmake --build build --config Release &&
+cmake --install build --config Release
+```
+
 ## Author
 
 [Nat!](//www.mulle-kybernetik.com/weblog) for
