@@ -11,7 +11,7 @@ generate_brew_formula_build()
 
   def install
     system "mulle-sde", "clean", "cache"
-    system "mulle-sde","install","--standalone","--prefix","#{prefix}","https://github.com/MulleFoundation/Foundation/archive/refs/tags/latest.tar.gz"
+    system "mulle-sde","install","--standalone","--prefix","#{prefix}","#{url}"
   end
 EOF
 }
