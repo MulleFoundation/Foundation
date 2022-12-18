@@ -17,7 +17,7 @@ LANGUAGE="objc"             # c,cpp, objc, bash ...
 # DEPENDENCIES and BUILD_DEPENDENCIES will be evaled later!
 # So keep them single quoted.
 #
-DEPENDENCIES='mulle-objc/software/mulle-clang
+DEPENDENCIES='mulle-objc/software/mulle-clang-project
 mulle-kybernetik/software/mulle-sde
 cmake
 ninja'
