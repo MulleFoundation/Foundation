@@ -5,59 +5,65 @@
 It's main raison d´etre is to support `#import <Foundation/Foundation.h>`
 statements in Objective-C code.
 
-It also adds the following libraries to the list of dependencies:
+
+| Release Version                                       | Release Notes
+|-------------------------------------------------------|--------------
+| ![Mulle kybernetiK tag](https://img.shields.io/github/tag//Foundation.svg?branch=release) [![Build Status](https://github.com//Foundation/workflows/CI/badge.svg?branch=release)](//github.com//Foundation/actions)| [RELEASENOTES](RELEASENOTES.md) |
 
 
-Library                                                                            | Description
------------------------------------------------------------------------------------|---------------------
-[MulleObjCExpatFoundation](//github.com/MulleFoundation/MulleObjCExpatFoundation)  | XML property lists
-[MulleObjCJSMNFoundation](//github.com/MulleWeb/MulleObjCJSMNFoundation)           | JSON property lists
-[MulleObjCHTTPFoundation](//github.com/MulleWeb/MulleObjCHTTPFoundation)           | NSURL handling
-[objc-compat](//github.com/MulleFoundation/objc-compat)                            | Objective-C runtime glue
-[mulle-objc-compat](//github.com/mulle-objc/mulle-objc-compat)                     | Apple runtime compatibility
 
 
+
+## Requirements
+
+|   Requirement         | Release Version  | Description
+|-----------------------|------------------|---------------
+| [MulleFoundation](https://github.com/MulleFoundation/MulleFoundation) | ![Mulle kybernetiK tag](https://img.shields.io/github/tag//.svg) [![Build Status](https://github.com///workflows/CI/badge.svg?branch=release)](https://github.com///actions/workflows/mulle-sde-ci.yml) | 💍 Umbrella library for the MulleFoundation
+| [MulleObjCExpatFoundation](https://github.com/MulleFoundation/MulleObjCExpatFoundation) | ![Mulle kybernetiK tag](https://img.shields.io/github/tag//.svg) [![Build Status](https://github.com///workflows/CI/badge.svg?branch=release)](https://github.com///actions/workflows/mulle-sde-ci.yml) | 👴🏼 XML parser based on MulleObjCStandardFoundation and libexpat
+| [MulleObjCInetOSFoundation](https://github.com/MulleFoundation/MulleObjCInetOSFoundation) | ![Mulle kybernetiK tag](https://img.shields.io/github/tag//.svg) [![Build Status](https://github.com///workflows/CI/badge.svg?branch=release)](https://github.com///actions/workflows/mulle-sde-ci.yml) | 📠💻 OS specific extensions to NSHost and NSURL
+| [MulleObjCHTTPFoundation](https://github.com/MulleWeb/MulleObjCHTTPFoundation) | ![Mulle kybernetiK tag](https://img.shields.io/github/tag//.svg) [![Build Status](https://github.com///workflows/CI/badge.svg?branch=release)](https://github.com///actions/workflows/mulle-sde-ci.yml) | 🎫 HTTP and HTML utility methods and classes for mulle-objc
+| [mulle-objc-compat](https://github.com/mulle-objc/mulle-objc-compat) | ![Mulle kybernetiK tag](https://img.shields.io/github/tag//.svg) [![Build Status](https://github.com///workflows/CI/badge.svg?branch=release)](https://github.com///actions/workflows/mulle-sde-ci.yml) | 🍏 Compatibility layer with Apple Objective-C runtime functions
+| [objc-compat](https://github.com/MulleFoundation/objc-compat) | ![Mulle kybernetiK tag](https://img.shields.io/github/tag//.svg) [![Build Status](https://github.com///workflows/CI/badge.svg?branch=release)](https://github.com///actions/workflows/mulle-sde-ci.yml) | 🔗 Glue for Objective-C code to support different Foundations
+| [mulle-objc-list](https://github.com/mulle-objc/mulle-objc-list) | ![Mulle kybernetiK tag](https://img.shields.io/github/tag//.svg) [![Build Status](https://github.com///workflows/CI/badge.svg?branch=release)](https://github.com///actions/workflows/mulle-sde-ci.yml) | 📒 Lists mulle-objc runtime information contained in executables.
 
 ### You are here
 
 ![Overview](overview.dot.svg)
 
+## Add
 
-####  Legacy technologies
+Use [mulle-sde](//github.com/mulle-sde) to add Foundation to your project:
 
-* File handling with NSURL
-
+``` sh
+mulle-sde add github:MulleFoundation/Foundation
+```
 
 ## Install
 
-See [foundation-developer](//github.com/MulleFoundation/foundation-developer)
-for instructions how to install via *apt* or *brew* or via an
-installer script. There is also a "Dockerfile" available. It will install
-everything you need.
+### Install with mulle-sde
 
-### Legacy install
+Use [mulle-sde](//github.com/mulle-sde) to build and install Foundation and all dependencies:
 
-This builds everything and installs header and libraries into a folder of
-your choice like `/usr/local` or `${HOME}`:
-
-``` bash
-mulle-sde install --prefix "/usr/local" \
-                   "https://github.com/MulleFoundation/Foundation/archive/latest.tar.gz"
+``` sh
+mulle-sde install --prefix /usr/local \
+   https://github.com/MulleFoundation/Foundation/archive/latest.tar.gz
 ```
-
 
 ### Manual Installation
 
-*Don't do this, it will take hours...*
-
 Install the requirements:
 
-Requirements                                                    | Description
-----------------------------------------------------------------|-----------------------
-[MulleFoundation](//github.com/MulleFoundation/MulleFoundation) | MulleFoundation and its dependencies
+| Requirements                                 | Description
+|----------------------------------------------|-----------------------
+| [MulleFoundation](https://github.com/MulleFoundation/MulleFoundation)             | 💍 Umbrella library for the MulleFoundation
+| [MulleObjCExpatFoundation](https://github.com/MulleFoundation/MulleObjCExpatFoundation)             | 👴🏼 XML parser based on MulleObjCStandardFoundation and libexpat
+| [MulleObjCInetOSFoundation](https://github.com/MulleFoundation/MulleObjCInetOSFoundation)             | 📠💻 OS specific extensions to NSHost and NSURL
+| [MulleObjCHTTPFoundation](https://github.com/MulleWeb/MulleObjCHTTPFoundation)             | 🎫 HTTP and HTML utility methods and classes for mulle-objc
+| [mulle-objc-compat](https://github.com/mulle-objc/mulle-objc-compat)             | 🍏 Compatibility layer with Apple Objective-C runtime functions
+| [objc-compat](https://github.com/MulleFoundation/objc-compat)             | 🔗 Glue for Objective-C code to support different Foundations
+| [mulle-objc-list](https://github.com/mulle-objc/mulle-objc-list)             | 📒 Lists mulle-objc runtime information contained in executables.
 
-Install into `/usr/local`:
-
+Install **Foundation** into `/usr/local` with [cmake](https://cmake.org):
 
 ``` sh
 cmake -B build \
@@ -70,6 +76,6 @@ cmake --install build --config Release
 
 ## Author
 
-[Nat!](//www.mulle-kybernetik.com/weblog) for
-[Mulle kybernetiK](//www.mulle-kybernetik.com) and
-[Codeon GmbH](//www.codeon.de)
+[Nat!](https://mulle-kybernetik.com/weblog) for Mulle kybernetiK
+
+

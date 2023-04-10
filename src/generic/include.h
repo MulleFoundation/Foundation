@@ -13,6 +13,7 @@
 
    The C-compiler will pick up the nearest one.
 */
+#include <mulle-c11/mulle-c11.h>
 
 #ifndef FOUNDATION_GLOBAL
 
