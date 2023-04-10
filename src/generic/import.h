@@ -11,6 +11,8 @@
 
 #ifndef FOUNDATION_GLOBAL
 
+#include <mulle-c11/mulle-c11.h>
+
 #ifdef FOUNDATION_BUILD
 # define FOUNDATION_GLOBAL    MULLE_C_GLOBAL
 #else

@@ -1,0 +1,3 @@
+It's main raison d´etre is to support `#import <Foundation/Foundation.h>`
+statements in Objective-C code.
+

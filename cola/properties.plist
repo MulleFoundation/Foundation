@@ -1,0 +1,71 @@
+{
+   project =
+   {
+      description="💍 MulleFoundation with improved compatibility and legacy support";
+      domain="github";
+      name="Foundation";
+      user="MulleFoundation";
+      repo="Foundation";
+      homepage="https://github.com/MulleFoundation/Foundation";
+      license="BSD-3-Clause"
+   };
+   dependencies =
+   (
+      {
+         description="💍 Umbrella library for the MulleFoundation";
+         domain="github";
+         name="MulleFoundation";
+         repo="MulleFoundation";
+         url="https://github.com/MulleFoundation/MulleFoundation";
+         user="MulleFoundation";
+      },
+      {
+         description="👴🏼 XML parser based on MulleObjCStandardFoundation and libexpat";
+         domain="github";
+         name="MulleObjCExpatFoundation";
+         repo="MulleObjCExpatFoundation";
+         url="https://github.com/MulleFoundation/MulleObjCExpatFoundation";
+         user="MulleFoundation";
+      },
+      {
+         description="📠💻 OS specific extensions to NSHost and NSURL";
+         domain="github";
+         name="MulleObjCInetOSFoundation";
+         repo="MulleObjCInetOSFoundation";
+         url="https://github.com/MulleFoundation/MulleObjCInetOSFoundation";
+         user="MulleFoundation";
+      },
+      {
+         description="🎫 HTTP and HTML utility methods and classes for mulle-objc";
+         domain="github";
+         name="MulleObjCHTTPFoundation";
+         repo="MulleObjCHTTPFoundation";
+         url="https://github.com/MulleWeb/MulleObjCHTTPFoundation";
+         user="MulleWeb";
+      },
+      {
+         description="🍏 Compatibility layer with Apple Objective-C runtime functions";
+         domain="github";
+         name="mulle-objc-compat";
+         repo="mulle-objc-compat";
+         url="https://github.com/mulle-objc/mulle-objc-compat";
+         user="mulle-objc";
+      },
+      {
+         description="🔗 Glue for Objective-C code to support different Foundations";
+         domain="github";
+         name="objc-compat";
+         repo="objc-compat";
+         url="https://github.com/MulleFoundation/objc-compat";
+         user="MulleFoundation";
+      },
+      {
+         description="📒 Lists mulle-objc runtime information contained in executables.";
+         domain="github";
+         name="mulle-objc-list";
+         repo="mulle-objc-list";
+         url="https://github.com/mulle-objc/mulle-objc-list";
+         user="mulle-objc";
+      }
+   )
+}
