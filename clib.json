@@ -1,6 +1,6 @@
 {
    "name" : "Foundation",
-   "version" : "0.21.1",
+   "version" : "0.22.0",
    "description" : "MulleFoundation with improved compatibility and legacy support",
    "keywords" : [],
    "license" : "BSD-3-Clause",
@@ -69,7 +69,6 @@
       "src/MulleObjCLoader+Foundation.m",
       "src/NSDebug.h",
       "src/NSObjCRuntime.h",
-      "src/reflect/objc-loader.inc",
       "src/reflect/_Foundation-export.h",
       "src/reflect/_Foundation-import-private.h",
       "src/reflect/_Foundation-import.h",
