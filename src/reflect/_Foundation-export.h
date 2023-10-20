@@ -9,6 +9,10 @@
  *
  *      mulle-sde environment set MULLE_MATCH_TO_C_RUN DISABLE
  */
+#ifndef foundation_export_h__
+#define foundation_export_h__
+
+
 #import "NSDebug.h"
 #import "NSObjCRuntime.h"
 #import "NSArchiver.h"
@@ -64,3 +68,6 @@
 #import "NSUserDefaults.h"
 #import "NSValue.h"
 #import "NSZone.h"
+
+
+#endif

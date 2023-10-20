@@ -64,6 +64,8 @@ Install the requirements:
 | [objc-compat](https://github.com/MulleFoundation/objc-compat)             | 🔗 Glue for Objective-C code to support different Foundations
 | [mulle-objc-list](https://github.com/mulle-objc/mulle-objc-list)             | 📒 Lists mulle-objc runtime information contained in executables.
 
+Download the latest [tar](https://github.com/MulleFoundation/Foundation/archive/refs/tags/latest.tar.gz) or [zip](https://github.com/MulleFoundation/Foundation/archive/refs/tags/latest.zip) archive and unpack it.
+
 Install **Foundation** into `/usr/local` with [cmake](https://cmake.org):
 
 ``` sh
