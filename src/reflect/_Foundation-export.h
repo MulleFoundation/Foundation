@@ -9,8 +9,8 @@
  *
  *      mulle-sde environment set MULLE_MATCH_TO_C_RUN DISABLE
  */
-#ifndef foundation_export_h__
-#define foundation_export_h__
+#ifndef _foundation__export_h__
+#define _foundation__export_h__
 
 
 #import "NSDebug.h"

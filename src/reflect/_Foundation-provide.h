@@ -9,8 +9,8 @@
  *
  *      mulle-sde environment set MULLE_MATCH_TO_C_RUN DISABLE
  */
-#ifndef foundation_provide_h__
-#define foundation_provide_h__
+#ifndef _foundation__provide_h__
+#define _foundation__provide_h__
 
 
 // no headers

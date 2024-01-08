@@ -14,27 +14,33 @@
 #ifndef _foundation_include_h__
 #define _foundation_include_h__
 
-// You can tweak the following #include with these commands.
-// (Use BD0E4FC1-56D9-4EF4-91D0-862D520A2ADC instead of mulle-objc-compat if there are duplicate entries)
-//    remove #include:: `mulle-sde dependency mark mulle-objc-compat no-header`
-//    rename:              `mulle-sde dependency|library set mulle-objc-compat include whatever.h`
-//    reorder:             `mulle-sde dependency move mulle-objc-compat <up|down>`
-//    toggle #include:    `mulle-sde dependency mark mulle-objc-compat [no-]import`
-//    toggle public:       `mulle-sde dependency mark mulle-objc-compat [no-]public`
-//    toggle optional:     `mulle-sde dependency mark mulle-objc-compat [no-]require`
-//    remove for platform: `mulle-sde dependency mark mulle-objc-compat no-platform-<uname>`
+// To remove the following dependency (headers and library) completely:
+//   `mulle-sde dependency remove mulle-objc-compat`
+// (Use BD0E4FC1-56D9-4EF4-91D0-862D520A2ADC instead of mulle-objc-compat, if there are duplicate entries)
+//
+// You can tweak the following #include with these commands:
+//    remove #include: `mulle-sde dependency mark mulle-objc-compat no-header`
+//    rename              : `mulle-sde dependency|library set mulle-objc-compat include whatever.h`
+//    reorder             : `mulle-sde dependency move mulle-objc-compat <up|down>`
+//    toggle #include: `mulle-sde dependency mark mulle-objc-compat [no-]import`
+//    toggle public       : `mulle-sde dependency mark mulle-objc-compat [no-]public`
+//    toggle optional     : `mulle-sde dependency mark mulle-objc-compat [no-]require`
+//    remove for platform : `mulle-sde dependency mark mulle-objc-compat no-platform-<uname>`
 //        (use `mulle-sourcetree-to-c --unames` to list known values)
 #include <mulle-objc-compat/mulle-objc-compat.h>   // mulle-objc-compat
 
-// You can tweak the following #include with these commands.
-// (Use 1d5ee5ef-0008-4953-906c-010b0f2438dc instead of objc-compat if there are duplicate entries)
-//    remove #include:: `mulle-sde dependency mark objc-compat no-header`
-//    rename:              `mulle-sde dependency|library set objc-compat include whatever.h`
-//    reorder:             `mulle-sde dependency move objc-compat <up|down>`
-//    toggle #include:    `mulle-sde dependency mark objc-compat [no-]import`
-//    toggle public:       `mulle-sde dependency mark objc-compat [no-]public`
-//    toggle optional:     `mulle-sde dependency mark objc-compat [no-]require`
-//    remove for platform: `mulle-sde dependency mark objc-compat no-platform-<uname>`
+// To remove the following dependency (headers and library) completely:
+//   `mulle-sde dependency remove objc-compat`
+// (Use 1d5ee5ef-0008-4953-906c-010b0f2438dc instead of objc-compat, if there are duplicate entries)
+//
+// You can tweak the following #include with these commands:
+//    remove #include: `mulle-sde dependency mark objc-compat no-header`
+//    rename              : `mulle-sde dependency|library set objc-compat include whatever.h`
+//    reorder             : `mulle-sde dependency move objc-compat <up|down>`
+//    toggle #include: `mulle-sde dependency mark objc-compat [no-]import`
+//    toggle public       : `mulle-sde dependency mark objc-compat [no-]public`
+//    toggle optional     : `mulle-sde dependency mark objc-compat [no-]require`
+//    remove for platform : `mulle-sde dependency mark objc-compat no-platform-<uname>`
 //        (use `mulle-sourcetree-to-c --unames` to list known values)
 #include <objc-compat/objc-compat.h>   // objc-compat
 
