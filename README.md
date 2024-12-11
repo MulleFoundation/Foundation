@@ -9,7 +9,7 @@ statements in Objective-C code.
 
 | Release Version                                       | Release Notes
 |-------------------------------------------------------|--------------
-| ![Mulle kybernetiK tag](https://img.shields.io/github/tag/MulleFoundation/Foundation.svg?branch=release) [![Build Status](https://github.com/MulleFoundation/Foundation/workflows/CI/badge.svg?branch=release)](//github.com/MulleFoundation/Foundation/actions) | [RELEASENOTES](RELEASENOTES.md) |
+| ![Mulle kybernetiK tag](https://img.shields.io/github/tag/MulleFoundation/Foundation.svg) [![Build Status](https://github.com/MulleFoundation/Foundation/workflows/CI/badge.svg)](//github.com/MulleFoundation/Foundation/actions) | [RELEASENOTES](RELEASENOTES.md) |
 
 
 
