@@ -6,11 +6,6 @@
    .aam files only.
 */
 
-/*
-   Include C first
-*/
-#include "include-private.h"
-
 
 /*
    Now the public interfaces
@@ -22,6 +17,13 @@
    sourcetree, then you don't need it.
  */
 #import "_Foundation-import-private.h"
+
+
+/*
+   Include C last in this project
+*/
+#include "include-private.h"
+
 
 /* You can add some more include statements here */
 

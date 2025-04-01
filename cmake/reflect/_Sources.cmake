@@ -12,6 +12,7 @@ endif()
 #
 set( SOURCES
 src/Foundation.m
+src/NSMutableCopying.m
 )
 
 #
@@ -19,11 +20,4 @@ src/Foundation.m
 #
 set( STAGE2_SOURCES
 src/MulleObjCLoader+Foundation.m
-)
-
-#
-# contents selected with patternfile ??-source--standalone-sources
-#
-set( STANDALONE_SOURCES
-src/Foundation-standalone.m
 )

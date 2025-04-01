@@ -1,6 +1,6 @@
 cmake_minimum_required( VERSION 3.15)
 
-project( Foundation VERSION 0.22.2 LANGUAGES C)
+project( Foundation VERSION 0.23.0 LANGUAGES C)
 
 
 #
@@ -22,12 +22,13 @@ include( IDESupport OPTIONAL)
 
 include( Files)
 
+
 ### Library
 
 if( HEADERS_PHASE)
    install( FILES ${INSTALL_PUBLIC_HEADERS}  DESTINATION "include/${PROJECT_NAME}")
    install( FILES ${INSTALL_PRIVATE_HEADERS} DESTINATION "include/${PROJECT_NAME}")
-   install( FILES ${INSTALL_CMAKE_INCLUDES}          DESTINATION "include/${PROJECT_NAME}/cmake")
+   install( FILES ${INSTALL_CMAKE_INCLUDES}  DESTINATION "include/${PROJECT_NAME}/cmake")
 
    # short cut out
    if( NOT COMPILE_PHASE AND NOT LINK_PHASE)

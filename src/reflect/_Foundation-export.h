@@ -14,6 +14,7 @@
 
 
 #import "NSDebug.h"
+#import "NSMutableCopying.h"
 #import "NSObjCRuntime.h"
 #import "NSArchiver.h"
 #import "NSArray.h"
