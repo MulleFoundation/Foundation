@@ -1,3 +1,6 @@
 It's main raison d´etre is to support `#import <Foundation/Foundation.h>`
 statements in Objective-C code.
 
+But it also contains some constructs like `NSMutableCopying` which is now
+shunned by mulle-objc coding.
+

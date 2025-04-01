@@ -11,10 +11,10 @@ endif()
 # contents are derived from the file locations
 
 set( INCLUDE_DIRS
-src
-src/generic
-src/headers
 src/reflect
+src/generic
+src
+src/headers
 )
 
 #
@@ -57,6 +57,7 @@ src/generic/include.h
 set( PUBLIC_HEADERS
 src/Foundation.h
 src/NSDebug.h
+src/NSMutableCopying.h
 src/NSObjCRuntime.h
 src/headers/NSArchiver.h
 src/headers/NSArray.h

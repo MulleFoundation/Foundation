@@ -7,7 +7,7 @@
  *
  *  version:  major, minor, patch
  */
-#define FOUNDATION_VERSION  ((0UL << 20) | (22 << 8) | 2)
+#define FOUNDATION_VERSION  ((0UL << 20) | (23 << 8) | 0)
 
 
 static inline unsigned int   Foundation_get_version_major( void)
@@ -37,6 +37,7 @@ uint32_t   Foundation_get_version( void);
 
    # include "foo.h"
 */
+#import "NSMutableCopying.h"
 
 
 #ifdef __has_include
