@@ -5,11 +5,14 @@
 It's main raison d´etre is to support `#import <Foundation/Foundation.h>`
 statements in Objective-C code.
 
+But it also contains some constructs like `NSMutableCopying` which is now
+shunned by mulle-objc coding.
 
 
-| Release Version                                       | Release Notes
-|-------------------------------------------------------|--------------
-| ![Mulle kybernetiK tag](https://img.shields.io/github/tag/MulleFoundation/Foundation.svg) [![Build Status](https://github.com/MulleFoundation/Foundation/workflows/CI/badge.svg)](//github.com/MulleFoundation/Foundation/actions) | [RELEASENOTES](RELEASENOTES.md) |
+
+| Release Version                                       | Release Notes  | AI Documentation
+|-------------------------------------------------------|----------------|---------------
+| ![Mulle kybernetiK tag](https://img.shields.io/github/tag/MulleFoundation/Foundation.svg) [![Build Status](https://github.com/MulleFoundation/Foundation/workflows/CI/badge.svg)](//github.com/MulleFoundation/Foundation/actions) | [RELEASENOTES](RELEASENOTES.md) | [DeepWiki for Foundation](https://deepwiki.com/MulleFoundation/Foundation)
 
 
 
