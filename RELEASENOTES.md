@@ -1,3 +1,9 @@
+## 0.23.0
+
+
+* black sheep NSMutableCopying now part of Foundation
+
+
 ### 0.22.2
 
 Various small improvements
