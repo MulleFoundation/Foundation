@@ -18,7 +18,15 @@ endif()
 # Disable for a sdk: `mulle-sourcetree mark objc-compat no-cmake-sdk-<name>`
 #
 if( NOT OBJC__COMPAT_HEADER)
-   find_file( OBJC__COMPAT_HEADER NAMES objc-compat.h objc-compat/objc-compat.h)
+   find_file( OBJC__COMPAT_HEADER NAMES
+      objc-compat.h objc-compat/objc-compat.h
+      NO_CMAKE_SYSTEM_PATH NO_SYSTEM_ENVIRONMENT_PATH NO_CMAKE_FIND_ROOT_PATH
+   )
+   if( NOT OBJC__COMPAT_HEADER AND NOT DEPENDENCY_IGNORE_SYSTEM_HEADERS)
+      find_file( OBJC__COMPAT_HEADER NAMES
+         objc-compat.h objc-compat/objc-compat.h
+      )
+   endif()
    message( STATUS "OBJC__COMPAT_HEADER is ${OBJC__COMPAT_HEADER}")
 
    #
@@ -70,7 +78,7 @@ if( NOT OBJC__COMPAT_HEADER)
       endforeach()
    else()
       # Disable with: `mulle-sourcetree mark objc-compat no-require`
-      message( SEND_ERROR "OBJC__COMPAT_HEADER was not found")
+      message( SEND_ERROR "OBJC__COMPAT_HEADER was not found in objc-compat.h objc-compat/objc-compat.h")
    endif()
 endif()
 
@@ -90,7 +98,7 @@ else()
          ${CMAKE_STATIC_LIBRARY_PREFIX}MulleFoundation${CMAKE_DEBUG_POSTFIX}${CMAKE_STATIC_LIBRARY_SUFFIX}
          ${CMAKE_STATIC_LIBRARY_PREFIX}MulleFoundation${CMAKE_STATIC_LIBRARY_SUFFIX}
          MulleFoundation
-         NO_CMAKE_SYSTEM_PATH NO_SYSTEM_ENVIRONMENT_PATH
+         NO_CMAKE_SYSTEM_PATH NO_SYSTEM_ENVIRONMENT_PATH NO_CMAKE_FIND_ROOT_PATH
       )
       if( NOT MULLE_FOUNDATION_LIBRARY AND NOT DEPENDENCY_IGNORE_SYSTEM_LIBARIES)
          find_library( MULLE_FOUNDATION_LIBRARY NAMES
@@ -156,7 +164,9 @@ else()
          endif()
       else()
          # Disable with: `mulle-sourcetree mark MulleFoundation no-require-link`
-         message( SEND_ERROR "MULLE_FOUNDATION_LIBRARY was not found")
+         message( SEND_ERROR "MULLE_FOUNDATION_LIBRARY was not found in ${CMAKE_STATIC_LIBRARY_PREFIX}MulleFoundation${CMAKE_DEBUG_POSTFIX}${CMAKE_STATIC_LIBRARY_SUFFIX}
+${CMAKE_STATIC_LIBRARY_PREFIX}MulleFoundation${CMAKE_STATIC_LIBRARY_SUFFIX}
+MulleFoundation")
       endif()
    endif()
 endif()
@@ -176,7 +186,7 @@ else()
          ${CMAKE_STATIC_LIBRARY_PREFIX}MulleObjCExpatFoundation${CMAKE_DEBUG_POSTFIX}${CMAKE_STATIC_LIBRARY_SUFFIX}
          ${CMAKE_STATIC_LIBRARY_PREFIX}MulleObjCExpatFoundation${CMAKE_STATIC_LIBRARY_SUFFIX}
          MulleObjCExpatFoundation
-         NO_CMAKE_SYSTEM_PATH NO_SYSTEM_ENVIRONMENT_PATH
+         NO_CMAKE_SYSTEM_PATH NO_SYSTEM_ENVIRONMENT_PATH NO_CMAKE_FIND_ROOT_PATH
       )
       if( NOT MULLE_OBJC_EXPAT_FOUNDATION_LIBRARY AND NOT DEPENDENCY_IGNORE_SYSTEM_LIBARIES)
          find_library( MULLE_OBJC_EXPAT_FOUNDATION_LIBRARY NAMES
@@ -262,7 +272,7 @@ else()
          ${CMAKE_STATIC_LIBRARY_PREFIX}MulleObjCInetOSFoundation${CMAKE_DEBUG_POSTFIX}${CMAKE_STATIC_LIBRARY_SUFFIX}
          ${CMAKE_STATIC_LIBRARY_PREFIX}MulleObjCInetOSFoundation${CMAKE_STATIC_LIBRARY_SUFFIX}
          MulleObjCInetOSFoundation
-         NO_CMAKE_SYSTEM_PATH NO_SYSTEM_ENVIRONMENT_PATH
+         NO_CMAKE_SYSTEM_PATH NO_SYSTEM_ENVIRONMENT_PATH NO_CMAKE_FIND_ROOT_PATH
       )
       if( NOT MULLE_OBJC_INET_OS_FOUNDATION_LIBRARY AND NOT DEPENDENCY_IGNORE_SYSTEM_LIBARIES)
          find_library( MULLE_OBJC_INET_OS_FOUNDATION_LIBRARY NAMES
@@ -348,7 +358,7 @@ else()
          ${CMAKE_STATIC_LIBRARY_PREFIX}MulleObjCHTTPFoundation${CMAKE_DEBUG_POSTFIX}${CMAKE_STATIC_LIBRARY_SUFFIX}
          ${CMAKE_STATIC_LIBRARY_PREFIX}MulleObjCHTTPFoundation${CMAKE_STATIC_LIBRARY_SUFFIX}
          MulleObjCHTTPFoundation
-         NO_CMAKE_SYSTEM_PATH NO_SYSTEM_ENVIRONMENT_PATH
+         NO_CMAKE_SYSTEM_PATH NO_SYSTEM_ENVIRONMENT_PATH NO_CMAKE_FIND_ROOT_PATH
       )
       if( NOT MULLE_OBJC_HTTP_FOUNDATION_LIBRARY AND NOT DEPENDENCY_IGNORE_SYSTEM_LIBARIES)
          find_library( MULLE_OBJC_HTTP_FOUNDATION_LIBRARY NAMES
@@ -434,7 +444,7 @@ else()
          ${CMAKE_STATIC_LIBRARY_PREFIX}mulle-objc-compat${CMAKE_DEBUG_POSTFIX}${CMAKE_STATIC_LIBRARY_SUFFIX}
          ${CMAKE_STATIC_LIBRARY_PREFIX}mulle-objc-compat${CMAKE_STATIC_LIBRARY_SUFFIX}
          mulle-objc-compat
-         NO_CMAKE_SYSTEM_PATH NO_SYSTEM_ENVIRONMENT_PATH
+         NO_CMAKE_SYSTEM_PATH NO_SYSTEM_ENVIRONMENT_PATH NO_CMAKE_FIND_ROOT_PATH
       )
       if( NOT MULLE__OBJC__COMPAT_LIBRARY AND NOT DEPENDENCY_IGNORE_SYSTEM_LIBARIES)
          find_library( MULLE__OBJC__COMPAT_LIBRARY NAMES
@@ -500,7 +510,9 @@ else()
          endif()
       else()
          # Disable with: `mulle-sourcetree mark mulle-objc-compat no-require-link`
-         message( SEND_ERROR "MULLE__OBJC__COMPAT_LIBRARY was not found")
+         message( SEND_ERROR "MULLE__OBJC__COMPAT_LIBRARY was not found in ${CMAKE_STATIC_LIBRARY_PREFIX}mulle-objc-compat${CMAKE_DEBUG_POSTFIX}${CMAKE_STATIC_LIBRARY_SUFFIX}
+${CMAKE_STATIC_LIBRARY_PREFIX}mulle-objc-compat${CMAKE_STATIC_LIBRARY_SUFFIX}
+mulle-objc-compat")
       endif()
    endif()
 endif()
