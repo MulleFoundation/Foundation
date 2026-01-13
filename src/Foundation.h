@@ -7,7 +7,7 @@
  *
  *  version:  major, minor, patch
  */
-#define FOUNDATION_VERSION  ((0UL << 20) | (23 << 8) | 0)
+#define FOUNDATION_VERSION  ((0UL << 20) | (23 << 8) | 1)
 
 
 static inline unsigned int   Foundation_get_version_major( void)

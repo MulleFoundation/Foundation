@@ -1,12 +1,11 @@
 {
    "name" : "Foundation",
-   "version" : "0.22.1",
+   "version" : "0.23.1",
    "description" : "💍 MulleFoundation with improved compatibility and legacy support",
    "keywords" : [],
    "license" : "BSD-3-Clause",
    "repo" : "MulleFoundation/Foundation",
    "src" : [
-      "src/Foundation-standalone.m",
       "src/Foundation.h",
       "src/Foundation.m",
       "src/generic/import-private.h",
@@ -68,6 +67,8 @@
       "src/headers/NSZone.h",
       "src/MulleObjCLoader+Foundation.m",
       "src/NSDebug.h",
+      "src/NSMutableCopying.h",
+      "src/NSMutableCopying.m",
       "src/NSObjCRuntime.h",
       "src/reflect/objc-loader.inc",
       "src/reflect/_Foundation-export.h",
