@@ -1,3 +1,8 @@
+### 0.23.1
+
+
+* removed Foundation-standalone.m from clib.json sources
+
 ## 0.23.0
 
 
