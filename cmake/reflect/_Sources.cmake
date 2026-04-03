@@ -19,5 +19,5 @@ src/NSMutableCopying.m
 # contents selected with patternfile ??-source--stage2-sources
 #
 set( STAGE2_SOURCES
-src/MulleObjCLoader+Foundation.m
+src/MulleObjCDeps+Foundation.m
 )

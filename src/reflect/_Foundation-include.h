@@ -22,7 +22,7 @@
 //    remove #include: `mulle-sde dependency mark mulle-objc-compat no-header`
 //    rename              : `mulle-sde dependency|library set mulle-objc-compat include whatever.h`
 //    reorder             : `mulle-sde dependency move mulle-objc-compat <up|down>`
-//    toggle #include: `mulle-sde dependency mark mulle-objc-compat [no-]import`
+//    toggle objc         : `mulle-sde dependency mark mulle-objc-compat [no-]import`
 //    toggle public       : `mulle-sde dependency mark mulle-objc-compat [no-]public`
 //    toggle optional     : `mulle-sde dependency mark mulle-objc-compat [no-]require`
 //    remove for platform : `mulle-sde dependency mark mulle-objc-compat no-platform-<uname>`
@@ -37,7 +37,7 @@
 //    remove #include: `mulle-sde dependency mark objc-compat no-header`
 //    rename              : `mulle-sde dependency|library set objc-compat include whatever.h`
 //    reorder             : `mulle-sde dependency move objc-compat <up|down>`
-//    toggle #include: `mulle-sde dependency mark objc-compat [no-]import`
+//    toggle objc         : `mulle-sde dependency mark objc-compat [no-]import`
 //    toggle public       : `mulle-sde dependency mark objc-compat [no-]public`
 //    toggle optional     : `mulle-sde dependency mark objc-compat [no-]require`
 //    remove for platform : `mulle-sde dependency mark objc-compat no-platform-<uname>`

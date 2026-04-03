@@ -1,4 +1,5 @@
 # Foundation Library Documentation for AI
+<!-- Keywords: compatibility, foundation -->
 
 ## 1. Introduction & Purpose
 
