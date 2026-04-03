@@ -19,7 +19,7 @@ int main( int argc, const char * argv[])
 
    s = [@"Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
           mutableInstance] /* > 256 chars */,
-   printf( "%s\n", [s UTF8String]);
+   mulle_printf( "%s\n", [s UTF8String]);
 
    return( 0);
 }

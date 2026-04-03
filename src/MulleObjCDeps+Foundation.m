@@ -1,13 +1,13 @@
 #import "import.h"
 
 
-@implementation MulleObjCLoader( Foundation)
+@implementation MulleObjCDeps( Foundation)
 
 + (struct _mulle_objc_dependency *) dependencies
 {
    static struct _mulle_objc_dependency   dependencies[] =
    {
-#include "objc-loader.inc"
+#include "objc-deps.inc"
 
       { MULLE_OBJC_NO_CLASSID, MULLE_OBJC_NO_CATEGORYID }
    };
