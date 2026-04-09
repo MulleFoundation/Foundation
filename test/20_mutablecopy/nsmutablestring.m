@@ -11,6 +11,10 @@
 //#import "MulleStandaloneObjCFoundation.h"
 
 
+@interface NSString (Forward)
+- (id) mutableInstance;
+@end
+
 
 int main( int argc, const char * argv[])
 {
