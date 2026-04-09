@@ -1,11 +1,12 @@
 {
    "name" : "Foundation",
-   "version" : "0.23.1",
+   "version" : "0.23.2",
    "description" : "💍 MulleFoundation with improved compatibility and legacy support",
    "keywords" : [],
    "license" : "BSD-3-Clause",
    "repo" : "MulleFoundation/Foundation",
    "src" : [
+      "asset/dox/TOC.md",
       "src/Foundation.h",
       "src/Foundation.m",
       "src/generic/import-private.h",

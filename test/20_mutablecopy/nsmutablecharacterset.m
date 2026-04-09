@@ -11,6 +11,11 @@
 #endif
 
 
+@interface NSMutableCharacterSet (Forward)
+- (id) mutableInstance;
+@end
+
+
 static int   test_i_copy( void)
 {
    NSMutableCharacterSet *obj;

@@ -10,6 +10,11 @@
 #import <MulleObjCStandardFoundation/MulleObjCStandardFoundation.h>
 
 
+@interface NSArray (Forward)
+- (id) mutableInstance;
+@end
+
+
 int   main( int argc, const char * argv[])
 {
    id         array;
