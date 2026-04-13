@@ -1,13 +1,3 @@
-      { @selector( MulleObjCDeps), @selector( MulleBase64) },      // 3c20656f;MulleObjCDeps;22440994;MulleBase64
-      { @selector( MulleObjCDeps), @selector( MulleFoundation) },      // 3c20656f;MulleObjCDeps;46ed3b36;MulleFoundation
-      { @selector( MulleObjCDeps), @selector( MulleFoundationBase) },      // 3c20656f;MulleObjCDeps;efab19ea;MulleFoundationBase
-      { @selector( MulleObjCDeps), @selector( MulleObjCCalendarFoundation) },      // 3c20656f;MulleObjCDeps;6b608d36;MulleObjCCalendarFoundation
-      { @selector( MulleObjCDeps), @selector( MulleObjCDecimalFoundation) },      // 3c20656f;MulleObjCDeps;f04a7a28;MulleObjCDecimalFoundation
-      { @selector( MulleObjCDeps), @selector( MulleObjCExpatFoundation) },      // 3c20656f;MulleObjCDeps;e5f6fc77;MulleObjCExpatFoundation
-      { @selector( MulleObjCDeps), @selector( MulleObjCHTTPFoundation) },      // 3c20656f;MulleObjCDeps;457d3115;MulleObjCHTTPFoundation
-      { @selector( MulleObjCDeps), @selector( MulleObjCInetFoundation) },      // 3c20656f;MulleObjCDeps;088ec1b3;MulleObjCInetFoundation
-      { @selector( MulleObjCDeps), @selector( MulleObjCInetOSFoundation) },      // 3c20656f;MulleObjCDeps;e6af6918;MulleObjCInetOSFoundation
-      { @selector( MulleObjCDeps), @selector( MulleObjCOSFoundation) },      // 3c20656f;MulleObjCDeps;94ffe970;MulleObjCOSFoundation
       { @selector( MulleDynamicObject), @selector( NSMutableCopying) },      // d9918780;MulleDynamicObject;4aa86031;NSMutableCopying
       { @selector( MulleObject), @selector( NSMutableCopying) },      // a4b69f59;MulleObject;4aa86031;NSMutableCopying
       { @selector( NSArray), @selector( NSMutableCopying) },      // 233490fe;NSArray;4aa86031;NSMutableCopying
