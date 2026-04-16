@@ -301,24 +301,18 @@ id   _MulleObjectCopy( id self, NSUInteger extraBytes)
 @end
 
 
+// Used to have NSMutableDictionary,( NSMutableCopying) with
+//   return( [[MulleObjCObjectGetClass( self) alloc] initWithDictionary:self])
+// But keeping the class is bad, because the subclass doesnt't have the
+// initializers
+//
+
 @implementation NSDictionary( NSMutableCopying)
 
 - (id) mutableCopy
 {
+
    return( [[NSMutableDictionary alloc] initWithDictionary:self]);
-}
-
-@end
-
-
-@implementation NSMutableDictionary( NSMutableCopying)
-
-//
-// keep the class
-//
-- (id) mutableCopy
-{
-   return( [[MulleObjCObjectGetClass( self) alloc] initWithDictionary:self]);
 }
 
 @end
