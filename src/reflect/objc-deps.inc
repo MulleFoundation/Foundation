@@ -8,7 +8,6 @@
       { @selector( NSCharacterSet), @selector( NSMutableCopying) },      // bb258d72;NSCharacterSet;4aa86031;NSMutableCopying
       { @selector( NSData), @selector( NSMutableCopying) },      // 8fce7861;NSData;4aa86031;NSMutableCopying
       { @selector( NSDictionary), @selector( NSMutableCopying) },      // 8b2abcad;NSDictionary;4aa86031;NSMutableCopying
-      { @selector( NSMutableDictionary), @selector( NSMutableCopying) },      // 2f2fa84a;NSMutableDictionary;4aa86031;NSMutableCopying
       { @selector( NSMutableString), @selector( NSMutableCopying) },      // 63662493;NSMutableString;4aa86031;NSMutableCopying
       { @selector( NSObject), @selector( NSMutableCopying) },      // b3a66256;NSObject;4aa86031;NSMutableCopying
       { @selector( NSSet), @selector( NSMutableCopying) },      // 9f69e3e4;NSSet;4aa86031;NSMutableCopying
