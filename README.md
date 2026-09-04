@@ -17,6 +17,11 @@ shunned by mulle-objc coding.
 
 
 
+## Documentation & Guides
+
+* [API Summary](asset/dox/api/toc)
+
+
 
 
 ## Requirements
