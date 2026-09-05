@@ -112,6 +112,5 @@ src/headers/NSUndoManager.h
 src/headers/NSUserDefaults.h
 src/headers/NSValue.h
 src/headers/NSZone.h
-src/reflect/_Foundation-versioncheck.h
 )
 
