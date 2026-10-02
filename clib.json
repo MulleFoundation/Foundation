@@ -1,6 +1,6 @@
 {
    "name" : "Foundation",
-   "version" : "0.23.4",
+   "version" : "0.23.5",
    "description" : "💍 MulleFoundation with improved compatibility and legacy support",
    "keywords" : [],
    "license" : "BSD-3-Clause",
@@ -81,11 +81,9 @@
    ],
    "dependencies" : {
       "MulleFoundation/MulleFoundation": "*",
-      "MulleFoundation/MulleObjCExpatFoundation": "*",
-      "MulleFoundation/MulleObjCInetOSFoundation": "*",
-      "MulleWeb/MulleObjCHTTPFoundation": "*",
+      "MulleWeb/MulleWebFoundation": "*",
       "mulle-objc/mulle-objc-compat": "*",
       "MulleFoundation/objc-compat": "*",
-      "mulle-objc/mulle-objc-list": "*"
+      "mulle-objc/mulle-objc-tools": "*"
    }
 }
