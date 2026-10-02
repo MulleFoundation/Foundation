@@ -3,17 +3,19 @@
    {
       description="💍 MulleFoundation with improved compatibility and legacy support";
       domain="github";
+      language="c";
+      dialect="objc";
       name="Foundation";
       user="MulleFoundation";
       repo="Foundation";
       homepage="https://github.com/MulleFoundation/Foundation";
-      version="0.23.4";
+      version="0.23.5";
       license="BSD-3-Clause";
    };
    dependencies =
    (
       {
-         description="💍 Umbrella library for the MulleFoundation";
+         description="🧱 MulleFoundation amalgamates Foundations projects";
          domain="github";
          name="MulleFoundation";
          repo="MulleFoundation";
@@ -21,27 +23,11 @@
          user="MulleFoundation";
       },
       {
-         description="👴🏼 XML parser based on MulleObjCStandardFoundation and libexpat";
+         description="🛸 MulleWebFoundation does something";
          domain="github";
-         name="MulleObjCExpatFoundation";
-         repo="MulleObjCExpatFoundation";
-         url="https://github.com/MulleFoundation/MulleObjCExpatFoundation";
-         user="MulleFoundation";
-      },
-      {
-         description="📠💻 OS specific extensions to NSHost and NSURL";
-         domain="github";
-         name="MulleObjCInetOSFoundation";
-         repo="MulleObjCInetOSFoundation";
-         url="https://github.com/MulleFoundation/MulleObjCInetOSFoundation";
-         user="MulleFoundation";
-      },
-      {
-         description="🎫 HTTP and HTML utility methods and classes for mulle-objc";
-         domain="github";
-         name="MulleObjCHTTPFoundation";
-         repo="MulleObjCHTTPFoundation";
-         url="https://github.com/MulleWeb/MulleObjCHTTPFoundation";
+         name="MulleWebFoundation";
+         repo="MulleWebFoundation";
+         url="https://github.com/MulleWeb/MulleWebFoundation";
          user="MulleWeb";
       },
       {

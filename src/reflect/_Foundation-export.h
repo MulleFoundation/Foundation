@@ -3,11 +3,11 @@
  *   `mulle-sde reflect` and any edits will be lost.
  *   Suppress generation of this file with:
  *
- *      mulle-sde environment set MULLE_MATCH_TO_C_OBJC_HEADERS_FILE DISABLE
+ *      mulle-sde environment --global set MULLE_MATCH_TO_C_OBJC_HEADERS_FILE DISABLE
  *
  *   To not let mulle-match-to-c generate any header files:
  *
- *      mulle-sde environment set MULLE_MATCH_TO_C_RUN DISABLE
+ *      mulle-sde environment --global set MULLE_MATCH_TO_C_RUN DISABLE
  */
 #ifndef _foundation__export_h__
 #define _foundation__export_h__
@@ -21,15 +21,15 @@
 #import "NSAutoreleasePool.h"
 #import "NSBundle.h"
 #import "NSByteOrder.h"
-#import "NSCalendarDate.h"
 #import "NSCalendar.h"
+#import "NSCalendarDate.h"
 #import "NSCharacterSet.h"
 #import "NSCoder.h"
 #import "NSData.h"
-#import "NSDateFormatter.h"
 #import "NSDate.h"
-#import "NSDecimalNumber.h"
+#import "NSDateFormatter.h"
 #import "NSDecimal.h"
+#import "NSDecimalNumber.h"
 #import "NSDictionary.h"
 #import "NSEnumerator.h"
 #import "NSError.h"
@@ -46,11 +46,11 @@
 #import "NSMutableDictionary.h"
 #import "NSMutableSet.h"
 #import "NSMutableString.h"
-#import "NSNotificationCenter.h"
 #import "NSNotification.h"
+#import "NSNotificationCenter.h"
 #import "NSNull.h"
-#import "NSNumberFormatter.h"
 #import "NSNumber.h"
+#import "NSNumberFormatter.h"
 #import "NSObject.h"
 #import "NSPathUtilities.h"
 #import "NSProcessInfo.h"

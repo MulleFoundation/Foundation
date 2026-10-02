@@ -1,6 +1,6 @@
 cmake_minimum_required( VERSION 3.13...99.99)
 
-project( Foundation VERSION 0.23.4 LANGUAGES C)
+project( Foundation VERSION 0.23.5 LANGUAGES C)
 
 
 #
@@ -18,7 +18,7 @@ list( INSERT CMAKE_MODULE_PATH 0 "${CMAKE_CURRENT_SOURCE_DIR}/cmake")
 
 include( Environment)
 
-include( IDESupport OPTIONAL)
+# include( IDESupport OPTIONAL)
 
 include( Files)
 
@@ -61,8 +61,8 @@ endif()
 include( InstallLibrary)
 
 if( LINK_PHASE)
-   include( InstallCMakeInclude)
-   include( InstallCMakePackage)
+   include( AddSubdirectorySupport)
+   include( FindPackageSupport)
 endif() 
 
 include( FinalOutput OPTIONAL)
