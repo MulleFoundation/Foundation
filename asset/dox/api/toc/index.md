@@ -12,8 +12,7 @@ It solves the portability problem of classic Cocoa/Foundation code when that
 code is compiled with the mulle-objc runtime. Concrete responsibilities:
 
 - Provide an umbrella header `Foundation.h` that pulls in `MulleFoundation` and
-  (when present) `MulleObjCExpatFoundation`, `MulleObjCInetOSFoundation` and
-  `MulleObjCHTTPFoundation`.
+  `MulleWebFoundation`.
 - Provide dozens of Apple-compatible header shims (`NSArray.h`, `NSString.h`,
   `NSData.h`, ...) so that Apple-style subheader imports resolve without
   touching the mulle internals directly. Every shim simply does
@@ -82,7 +81,7 @@ plus version information.
 **Version macros / inline functions (copied verbatim):**
 
 ```c
-#define FOUNDATION_VERSION  ((0UL << 20) | (23 << 8) | 4)
+#define FOUNDATION_VERSION  ((0UL << 20) | (23 << 8) | 5)
 
 static inline unsigned int   Foundation_get_version_major( void)
 {
@@ -107,18 +106,13 @@ FOUNDATION_GLOBAL
 uint32_t   Foundation_get_version( void);
 ```
 
-- Returns the packed version number (`FOUNDATION_VERSION`, here 0.23.4).
+- Returns the packed version number (`FOUNDATION_VERSION`, here 0.23.5).
 
 **What `#import "Foundation.h"` pulls in:**
 
 1. `import.h` → `_Foundation-import.h`, which imports:
    - `<MulleFoundation/MulleFoundation.h>` (required).
-   - `<MulleObjCExpatFoundation/MulleObjCExpatFoundation.h>` if available
-     (guarded by `__has_include`, defines `HAVE_LIB_MULLE_OBJC_EXPAT_FOUNDATION`).
-   - `<MulleObjCInetOSFoundation/MulleObjCInetOSFoundation.h>` if available
-     (defines `HAVE_LIB_MULLE_OBJC_INET_OS_FOUNDATION`).
-   - `<MulleObjCHTTPFoundation/MulleObjCHTTPFoundation.h>` if available
-     (defines `HAVE_LIB_MULLE_OBJC_HTTP_FOUNDATION`).
+   - `<MulleWebFoundation/MulleWebFoundation.h>`.
    - `_Foundation-include.h` (if present), which includes
      `<mulle-objc-compat/mulle-objc-compat.h>` and
      `<objc-compat/objc-compat.h>`.
@@ -298,7 +292,7 @@ static inline id   MulleObjectCopy( id object, NSUInteger extraBytes)
 - **Public API surface:** This library adds almost no runtime overhead; it is a
   collection of include shims plus version functions. There is no per-call
   indirection introduced beyond the code actually imported from dependencies
-  (`MulleFoundation`, `MulleObjC*Foundation`, `mulle-objc-compat`).
+  (`MulleFoundation`, `MulleWebFoundation`, `mulle-objc-compat`).
 - **`-mutableCopy` variants:** O(n) in the number of elements — each
   conforming class builds a new mutable container and copies members
   (`initWithArray:`, `initWithDictionary:`, `initWithSet:copyItems:`,
@@ -339,7 +333,7 @@ static inline id   MulleObjectCopy( id object, NSUInteger extraBytes)
   `NSKeyedArchiver`, `NSUUID` or similar Apple-only classes exist) is
   determined by the dependencies, not by these headers.
 - **Use `Foundation_get_version*()` for feature gating** — `FOUNDATION_VERSION`
-  is the packed `major, minor, patch` value (0.23.4 here) and the inline
+  is the packed `major, minor, patch` value (0.23.5 here) and the inline
   accessors unpack it.
 
 ### Common Pitfalls
@@ -465,12 +459,8 @@ Direct `mulle-sde` library dependencies (from `.mulle/etc/sourcetree/config`
 and `clib.json`):
 
 - `MulleFoundation` — required; provides the actual Foundation class catalogue.
-- `MulleObjCExpatFoundation` — optional XML parser support (imported when
-  installed, defines `HAVE_LIB_MULLE_OBJC_EXPAT_FOUNDATION`).
-- `MulleObjCInetOSFoundation` — OS-specific `NSHost`/`NSURL` extensions
-  (`HAVE_LIB_MULLE_OBJC_INET_OS_FOUNDATION`).
-- `MulleObjCHTTPFoundation` — HTTP/HTML utility methods/classes
-  (`HAVE_LIB_MULLE_OBJC_HTTP_FOUNDATION`).
+- `MulleWebFoundation` — web/HTTP support, imported directly via
+  `<MulleWebFoundation/MulleWebFoundation.h>`.
 - `mulle-objc-compat` — Apple Objective-C runtime compatibility layer
   (`<mulle-objc-compat/mulle-objc-compat.h>`).
 - `objc-compat` — glue for Objective-C code to support different Foundations
