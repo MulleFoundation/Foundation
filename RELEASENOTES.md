@@ -1,6 +1,7 @@
 ### 0.23.5
 
 
+
 * `Foundation.h` umbrella header now imports `MulleWebFoundation` directly instead of conditionally pulling in `MulleObjCExpatFoundation`, `MulleObjCInetOSFoundation` and `MulleObjCHTTPFoundation`
 * **BREAKING** the ``HAVE_LIB_MULLE_OBJC_EXPAT_FOUNDATION`,` ``HAVE_LIB_MULLE_OBJC_INET_OS_FOUNDATION`` and ``HAVE_LIB_MULLE_OBJC_HTTP_FOUNDATION`` feature macros are no longer defined by `import.h`
 * updated the API/documentation TOC to reflect the new single web dependency
