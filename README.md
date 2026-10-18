@@ -32,7 +32,7 @@ shunned by mulle-objc coding. And it links compatibility runtime functions.
 | [MulleWebFoundation](https://github.com/MulleWeb/MulleWebFoundation) | ![Mulle kybernetiK tag](https://img.shields.io/github/tag/MulleWeb/MulleWebFoundation.svg) [![Build Status](https://github.com/MulleWeb/MulleWebFoundation/workflows/CI/badge.svg?branch=release)](https://github.com/MulleWeb/MulleWebFoundation/actions/workflows/mulle-sde-ci.yml) | 🛸 MulleWebFoundation does something
 | [mulle-objc-compat](https://github.com/mulle-objc/mulle-objc-compat) | ![Mulle kybernetiK tag](https://img.shields.io/github/tag/mulle-objc/mulle-objc-compat.svg) [![Build Status](https://github.com/mulle-objc/mulle-objc-compat/workflows/CI/badge.svg?branch=release)](https://github.com/mulle-objc/mulle-objc-compat/actions/workflows/mulle-sde-ci.yml) | 🍏 Compatibility layer with Apple Objective-C runtime functions
 | [objc-compat](https://github.com/MulleFoundation/objc-compat) | ![Mulle kybernetiK tag](https://img.shields.io/github/tag/MulleFoundation/objc-compat.svg) [![Build Status](https://github.com/MulleFoundation/objc-compat/workflows/CI/badge.svg?branch=release)](https://github.com/MulleFoundation/objc-compat/actions/workflows/mulle-sde-ci.yml) | 🔗 Glue for Objective-C code to support different Foundations
-| [mulle-objc-list](https://github.com/mulle-objc/mulle-objc-list) | ![Mulle kybernetiK tag](https://img.shields.io/github/tag/mulle-objc/mulle-objc-list.svg) [![Build Status](https://github.com/mulle-objc/mulle-objc-list/workflows/CI/badge.svg?branch=release)](https://github.com/mulle-objc/mulle-objc-list/actions/workflows/mulle-sde-ci.yml) | 📒 Lists mulle-objc runtime information contained in executables.
+| [mulle-objc-tools](https://github.com/mulle-objc/mulle-objc-tools) | ![Mulle kybernetiK tag](https://img.shields.io/github/tag/mulle-objc/mulle-objc-tools.svg) [![Build Status](https://github.com/mulle-objc/mulle-objc-tools/workflows/CI/badge.svg?branch=release)](https://github.com/mulle-objc/mulle-objc-tools/actions/workflows/mulle-sde-ci.yml) | 📒 Lists mulle-objc runtime information contained in executables.
 
 ### You are here
 
@@ -55,7 +55,7 @@ mulle-sde install --prefix /usr/local \
    https://github.com/MulleFoundation/Foundation/archive/latest.tar.gz
 ```
 
-### Legacy Installation
+### Manual Installation
 
 Install the requirements:
 
@@ -65,7 +65,7 @@ Install the requirements:
 | [MulleWebFoundation](https://github.com/MulleWeb/MulleWebFoundation)             | 🛸 MulleWebFoundation does something
 | [mulle-objc-compat](https://github.com/mulle-objc/mulle-objc-compat)             | 🍏 Compatibility layer with Apple Objective-C runtime functions
 | [objc-compat](https://github.com/MulleFoundation/objc-compat)             | 🔗 Glue for Objective-C code to support different Foundations
-| [mulle-objc-list](https://github.com/mulle-objc/mulle-objc-list)             | 📒 Lists mulle-objc runtime information contained in executables.
+| [mulle-objc-tools](https://github.com/mulle-objc/mulle-objc-tools)             | 📒 Lists mulle-objc runtime information contained in executables.
 
 Download the latest [tar](https://github.com/MulleFoundation/Foundation/archive/refs/tags/latest.tar.gz) or [zip](https://github.com/MulleFoundation/Foundation/archive/refs/tags/latest.zip) archive and unpack it.
 
